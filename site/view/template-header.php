@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +21,7 @@
             <!-- header-top -->
             <div class="header-top container">
                 <div class="header-logo">
-                    <a href="#">golf shop</a>
+                    <a href="?mod=page&act=home">golf shop</a>
                 </div>
                 <div class="header-search">
                     <form action="" method="post" role="search">
@@ -24,7 +30,7 @@
                     </form>
                 </div>
                 <div class="header-login display-flex">
-                    <a  href="#">Đăng nhập</a>
+                    <a  href="?mod=user&act=login">Đăng nhập</a>
                 </div>
                 <div class="header-cart display-flex">
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -37,7 +43,7 @@
                 <div class="container new-menu justify-content-space-between">
                     <nav id="main-menu" >
                         <ul class="display-flex">
-                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="?mod=page&act=home">Trang chủ</a></li>
                             <li>
                                 <a href="#">Giới thiệu <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="submenu">
@@ -48,7 +54,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+                                <a href="?mod=page&act=product">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="submenu">
                                         <li>
                                             <a href="#">Gậy Golf</a>
@@ -140,5 +146,3 @@
             </div>
         </header>
     </div>
-</body>
-</html>

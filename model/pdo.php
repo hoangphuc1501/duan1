@@ -3,7 +3,7 @@
  * Mở kết nối đến CSDL sử dụng PDO
  */
 function pdo_get_connection(){
-    $dburl = "mysql:host=localhost;dbname=golfshop;charset=utf8";
+    $dburl = "mysql:host=localhost;dbname=golfshops;charset=utf8";
     $username = 'root';
     $password = '';
 
@@ -78,6 +78,9 @@ function pdo_query_one($sql){
         unset($conn);
     }
 }
+
+
+
 /**
  * Thực thi câu lệnh sql truy vấn một giá trị
  * @param string $sql câu lệnh sql
@@ -101,3 +104,29 @@ function pdo_query_value($sql){
         unset($conn);
     }
 }
+
+function pdo_query_one_limit($sql, $limit = null){
+    try{
+        $conn = pdo_get_connection();
+        $stmt = $conn->prepare($sql);
+        if ($limit !== null) {
+            $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
+        }
+        $stmt->execute();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row;
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
+        unset($conn);
+    }
+}
+
+
+
+
+
+
+    

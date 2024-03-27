@@ -9,16 +9,16 @@ if(isset($mod)){
         // case 'cart':
         //     include_once 'controller/cart.php';
         //     break;
-        // case 'user':
-        //     include_once 'controller/user.php';
-        //     break;
+        case 'user':
+            include_once 'controller/user.php';
+            break;
         // case 'product':
         //     include_once 'controller/product.php';
         //     break;
     }
     
 }else{
-    header('location: ?mod=page&act=home');
+    header('location: ?mod=page&act=product');
 }
 
 ?>
