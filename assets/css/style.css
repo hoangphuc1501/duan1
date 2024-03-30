@@ -1,28 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     background: #F4F4F4;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     margin: 0 auto;
 }
 
+
 /* header */
-#header{
+
+#header {
     width: 100%;
     height: 95px;
     background: #232F3E;
 }
 
-.header-top{
+.header-top {
     /* width: 100%; */
     height: 50px;
     display: flex;
@@ -30,16 +34,19 @@ body{
     justify-content: space-between;
     padding: 0 20px;
 }
+
+
 /* logo */
-.header-logo, .footer-logo{
+
+.header-logo,
+.footer-logo {
     width: 217px;
     height: 40px;
     text-align: center;
-    
 }
 
 .header-logo a,
-.footer-logo a{
+.footer-logo a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -48,15 +55,18 @@ body{
     font-weight: 700;
 }
 
+
 /* search */
-.header-search{
+
+.header-search {
     position: relative;
     width: 809px;
     height: 40px;
     display: flex;
     justify-content: center;
 }
-.header-search input{
+
+.header-search input {
     width: 809px;
     height: 100%;
     border: none;
@@ -64,7 +74,8 @@ body{
     border-radius: 10px;
     padding: 10px;
 }
-.header-search button{
+
+.header-search button {
     position: absolute;
     top: 0;
     right: 0;
@@ -75,16 +86,21 @@ body{
     border-radius: 0 10px 10px 0;
     cursor: pointer;
 }
-.header-search button{
+
+.header-search button {
     font-size: 20px;
     color: #ffffff;
 }
+
+
 /* login */
-.header-login{
+
+.header-login {
     width: 120px;
     height: 40px;
 }
-.header-login a{
+
+.header-login a {
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
@@ -92,21 +108,26 @@ body{
     position: relative;
 }
 
+
 /* cart */
-.header-cart{
+
+.header-cart {
     width: 80px;
     height: 40px;
     position: relative;
 }
-.header-cart a{
+
+.header-cart a {
     position: relative;
 }
-.header-cart a i{
+
+.header-cart a i {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 30px;
 }
-.count-cart{
+
+.count-cart {
     position: absolute;
     font-size: 12px;
     top: -1px;
@@ -117,12 +138,15 @@ body{
     border-radius: 50%;
 }
 
+
 /* language */
-.header-language{
+
+.header-language {
     width: 100px;
     height: 40px;
 }
-.header-language a{
+
+.header-language a {
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
@@ -130,49 +154,56 @@ body{
     padding: 10px 20px;
 }
 
+
 /* menu */
-.header-nav{
+
+.header-nav {
     width: 100%;
     height: 35px;
     margin-top: 10px;
     background: #131921;
 }
 
-.new-menu{
+.new-menu {
     height: 100%;
-    
 }
-#main-menu{
+
+#main-menu {
     width: 1002px;
     height: 100%;
 }
 
-#main-menu ul{
+#main-menu ul {
     list-style: none;
     line-height: 35px;
 }
-#main-menu ul li{
+
+#main-menu ul li {
     position: relative;
 }
-#main-menu ul li a{
+
+#main-menu ul li a {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
     padding: 9px 15px;
     position: relative;
 }
-#main-menu ul li a i{
+
+#main-menu ul li a i {
     font-size: 10px;
     margin-left: 5px;
 }
 
+
 /* header-hotline */
-.header-hotline{
+
+.header-hotline {
     width: 300px;
     height: 100%;
 }
 
-.header-hotline a{
+.header-hotline a {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
@@ -182,6 +213,7 @@ body{
 
 
 /* hover */
+
 #main-menu ul li a:hover,
 .header-hotline a:hover,
 .header-language a:hover,
@@ -195,7 +227,7 @@ body{
 .header-hotline a::before,
 .header-language a::before,
 .header-cart a::before,
-.header-login a::before{
+.header-login a::before {
     content: '';
     position: absolute;
     left: 0px;
@@ -204,14 +236,15 @@ body{
     width: 0;
     height: 2px;
     background: orangered;
-    transform-origin: left; 
+    transform-origin: left;
     transition: width .5s;
 }
+
 #main-menu ul li a:hover::before,
 .header-hotline a:hover::before,
 .header-language a:hover::before,
 .header-cart a:hover::before,
-.header-login a:hover::before{
+.header-login a:hover::before {
     width: 100%;
 }
 
@@ -222,34 +255,37 @@ body{
     position: absolute;
     top: 35px;
     z-index: 999;
-
 }
-#main-menu ul li:hover .submenu{
+
+#main-menu ul li:hover .submenu {
     display: block;
 }
 
-#main-menu  .submenu li a{
+#main-menu .submenu li a {
     color: #000;
     display: block;
 }
 
-#main-menu ul.submenu ul.submenu{
+#main-menu ul.submenu ul.submenu {
     display: none;
     top: 0;
     position: absolute;
     left: 250px;
 }
-#main-menu ul li ul.submenu:hover ul.submenu{
+
+#main-menu ul li ul.submenu:hover ul.submenu {
     display: block;
 }
 
 
 /* footer */
-#footer{
+
+#footer {
     width: 100%;
     height: 260px;
     background: #000;
 }
+
 .footer-left,
 .footer-help,
 .footer-contact,
@@ -259,6 +295,7 @@ body{
     line-height: 25px;
     margin-top: 20px;
 }
+
 .footer-left h3,
 .footer-help h3,
 .footer-contact h3,
@@ -269,24 +306,27 @@ body{
 
 .footer-contact,
 .footer-input,
-.footer-left .operating-time p{
+.footer-left .operating-time p {
     color: #ffffff;
 }
-.footer-help ul li{
+
+.footer-help ul li {
     list-style: none;
 }
-.footer-help ul li a{
+
+.footer-help ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.footer-input input{
+.footer-input input {
     margin-top: 20px;
     width: 250px;
     height: 30px;
     padding: 0 5px;
 }
-.footer-input button{
+
+.footer-input button {
     width: 30px;
     height: 30px;
     background: #FFA41C;
@@ -297,15 +337,18 @@ body{
     cursor: pointer;
 }
 
+
 /*banner*/
-.banner{
+
+.banner {
     width: 100%;
     height: 600px;
     margin: auto;
     position: relative;
     overflow: hidden;
 }
-.banner .list-banner{
+
+.banner .list-banner {
     position: absolute;
     width: max-content;
     height: 100%;
@@ -314,13 +357,15 @@ body{
     display: flex;
     transition: 1s;
 }
-.banner .list-bannerimg{
+
+.banner .list-bannerimg {
     width: 1300px;
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
 }
-.banner .buttons{
+
+.banner .buttons {
     position: absolute;
     top: 45%;
     left: 4%;
@@ -328,7 +373,8 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.banner .buttons button{
+
+.banner .buttons button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -340,12 +386,14 @@ body{
     font-size: 30px;
     cursor: pointer;
 }
-.banner .buttons button:hover{
+
+.banner .buttons button:hover {
     background-color: #CD853F;
     border: 2px dotted black;
     color: #000;
 }
-.banner .dots{
+
+.banner .dots {
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -356,7 +404,8 @@ body{
     display: flex;
     justify-content: center;
 }
-.banner .dots li{
+
+.banner .dots li {
     list-style: none;
     width: 15px;
     height: 10px;
@@ -365,69 +414,100 @@ body{
     border-radius: 20px;
     transition: 0.5s;
 }
-.banner .dots li.active{
+
+.banner .dots li.active {
     width: 30px;
 }
+
+
 /* Túi golf */
+
+
 /* Thời trang golf */
+
+
 /* Sản phẩm nổi bật */
+
+
 /* Sản phẩm mới */
+
+
 /* sản phẩm sale */
+
+
 /*  */
+
 .collection-list-product,
 .product-shoe-golf,
 .product-bag-golf,
 .fashion-golf,
 .product-outstanding,
 .new-product,
-.product-sale-special{
+.product-sale-special {
     margin-top: 40px;
     min-height: 550px;
     background: #ffffff;
-
 }
+
+
 /* title */
+
 .product-shoe-golf .product-shoe-golf-title,
 .product-bag-golf .product-bag-golf-title,
 .fashion-golf .fashion-golf-title,
 .product-outstanding .product-outstanding-title,
 .product-sale-special .product-sale-special-title,
-.new-product .new-product-title{
+.new-product .new-product-title {
     width: 100%;
     height: 42px;
     background: #296E38;
     border-radius: 0 0 100px 100px;
 }
+
 .product-shoe-golf .product-shoe-golf-title a,
 .product-bag-golf .product-bag-golf-title a,
 .fashion-golf .fashion-golf-title a,
 .product-outstanding .product-outstanding-title a,
 .product-sale-special .product-sale-special-title a,
-.new-product .new-product-title a{
+.new-product .new-product-title a {
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
 }
+
+
 /* Danh sách túi golf */
+
+
 /* Danh sách thời trang golf */
+
+
 /* Danh sách sản phẩm nổi bật */
+
+
 /* Sanh sách sản phẩm sale */
+
+
 /* Danh sách sản phẩm mói*/
+
 .list-product-shoe-golf,
 .list-product-bag-golf,
-.list-fashion-golf
-.list-roduct-outstanding,
+.list-fashion-golf .list-roduct-outstanding,
 .list-product-sale,
-.list-new-product{
+.list-new-product {
     width: 100%;
     min-height: 460px;
 }
 
+
 /* sản phẩm */
+
+
 /* class css dùng chung cho mọi sản phẩm */
-.item-product{
+
+.item-product {
     width: 327px;
     height: 480px;
     position: relative;
@@ -435,35 +515,39 @@ body{
     box-shadow: 0 0 5px #B5BDC7;
     margin-top: 15px;
 }
-.item-product .product-title{
+
+.item-product .product-title {
     margin: 5px;
 }
-.item-product .product-title a{
+
+.item-product .product-title a {
     font-size: 18px;
     color: #000;
     text-decoration: none;
 }
 
-.item-product img{
+.item-product img {
     width: 100%;
     height: 327px;
 }
 
-.item-product .star{
+.item-product .star {
     margin: 5px;
     display: block;
     color: #F69329;
 }
-.item-product .promotion-price{
+
+.item-product .promotion-price {
     color: #dc3545;
     margin: 5px;
 }
 
-.item-product .price{
+.item-product .price {
     margin: 5px 20px;
     color: #8a8a8a;
 }
-.item-product .label-promotion{
+
+.item-product .label-promotion {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -474,15 +558,19 @@ body{
     border-radius: 5px;
     color: #ffffff;
 }
+
+
 /* button hành động */
-.item-product .action-product{
+
+.item-product .action-product {
     width: 100%;
     height: 40px;
     position: absolute;
     top: -50px;
     transition: all 0.3s ease-in-out;
 }
-.item-product .action-product button{
+
+.item-product .action-product button {
     width: 40px;
     height: 100%;
     cursor: pointer;
@@ -492,52 +580,66 @@ body{
     border: none;
     margin: 0 5px;
 }
-.item-product .action-product button a{
+
+.item-product .action-product button a {
     color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
 }
-.item-product .action-product button:hover{
+
+.item-product .action-product button:hover {
     background: #2b9945;
 }
-.item-product:hover .action-product{
+
+.item-product:hover .action-product {
     top: 150px;
 }
 
+
 /* xem tất cả */
+
 .see-more,
-.view-all{
+.view-all {
     margin: 20px 0;
 }
+
 .see-more a,
-.view-all a{
+.view-all a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
     background: #2b9945;
     border-radius: 10px;
     font-weight: bold;
-
 }
+
 .see-more a:hover,
-.view-all a:hover{
+.view-all a:hover {
     background: #fd7e14;
 }
 
+
 /* banner flash sale */
-.flash-sale-baner{
+
+.flash-sale-baner {
     height: 200px;
     margin-top: 40px;
 }
-.flash-sale-baner img{
+
+.flash-sale-baner img {
     width: 100%;
     height: 100%;
 }
-.list-banner-sale{
+
+.list-banner-sale {
     width: 49%;
     height: 100%;
 }
 
+
 /* dịch vụ hàng đầu */
-.top-service-golf{
+
+.top-service-golf {
     height: 580px;
     margin: 40px auto;
     background: #ffffff;
@@ -545,43 +647,50 @@ body{
     border-radius: 10px;
 }
 
-.title-top-service h1{
+.title-top-service h1 {
     text-transform: uppercase;
     font-size: 30px;
     margin-top: 20px;
 }
 
-.list-top-service{
+.list-top-service {
     width: 100%;
     height: 460px;
     margin: 20px 0;
 }
 
-.list-top-service  .top-service{
+.list-top-service .top-service {
     width: 335px;
     height: 460px;
     background: #222222;
 }
-.list-top-service  .top-service img{
+
+.list-top-service .top-service img {
     width: 100%;
     height: 200px;
 }
-.list-top-service  .top-service h3{
+
+.list-top-service .top-service h3 {
     font-size: 18px;
     color: #ffffff;
     text-transform: uppercase;
     padding: 5px 10px;
 }
-.list-top-service  .top-service p{ 
+
+.list-top-service .top-service p {
     color: #ffffff;
     padding: 5px 10px;
     font-size: 14px;
 }
+
+
 /* thư viện slider */
-.slick-initialized .slick-slide{
+
+.slick-initialized .slick-slide {
     margin: 0 10px;
 }
-.slick-arrow{
+
+.slick-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -596,24 +705,31 @@ body{
     z-index: 5;
     cursor: pointer;
 }
-.slick-arrow:hover{
+
+.slick-arrow:hover {
     border-radius: 50%;
-    background-color:#F04C28;
+    background-color: #F04C28;
     color: #ffffff;
 }
-.slick-prev{
+
+.slick-prev {
     background-color: #09A603;
     left: -18px;
     color: #ffffff;
     border-radius: 100%;
 }
-.slick-next{
+
+.slick-next {
     right: -18px;
     background-color: #09A603;
     color: #ffffff;
     border-radius: 100%;
 }
+
+
 /* dấu chấm */
+
+
 /* .slick-dots{
     list-style: none;
     position: absolute;
@@ -639,13 +755,15 @@ body{
     background-color: #2cccff;
 }  */
 
+
 /* đặc trưng */
-.section-featured{
+
+.section-featured {
     height: 120px;
     margin: 40px auto;
 }
 
-.section-featured .featured-inner{
+.section-featured .featured-inner {
     width: 335px;
     height: 100px;
     border: 1px solid #F04C28;
@@ -653,32 +771,40 @@ body{
     border-radius: 10px;
 }
 
+
 /* tin tức và kiến thức */
-.list-news-knowledge{
+
+.list-news-knowledge {
     min-height: 460px;
     margin: 40px auto;
 }
 
+
 /* Tin tức */
+
 .list-knowledge,
-.list-news{
+.list-news {
     min-height: 400px;
     width: 49%;
 }
-.post-title{
+
+.post-title {
     width: 100%;
     height: 40px;
     margin: 10px 0;
 }
-.post-title h3{
+
+.post-title h3 {
     text-transform: uppercase;
     color: #2b9945;
     padding: 0 10px;
 }
-.post-title a{
+
+.post-title a {
     text-decoration: none;
     color: #2b9945;
 }
+
 .list-knowledge .post-knowledge,
 .list-news .post-new {
     width: 100%;
@@ -686,37 +812,47 @@ body{
     padding: 0 10px;
     margin: 5px 0;
 }
+
+
 /* .list-knowledge .post-knowledge ,
 .list-news .post-new .new-img{
     width: 35%;
 } */
+
 .list-knowledge .post-knowledge img,
-.list-news .post-new img{
+.list-news .post-new img {
     width: 150px;
     height: 100%;
 }
+
 .list-knowledge .post-knowledge .knowledge-title,
-.list-news .post-new .new-title{
+.list-news .post-new .new-title {
     width: 75%;
     height: 100%;
 }
+
 .list-knowledge .post-knowledge a,
-.list-news .post-new .new-title a{
+.list-news .post-new .new-title a {
     color: #000;
     text-decoration: none;
     font-size: 18px;
 }
+
+
 /* Kiến thức */
+
+
 /* .list-knowledge{
     min-height: 500px;
     width: 49%;
     border: 1px solid blue;
 } */
 
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
     margin: 0 10px;
 }
-.slick-arrow{
+
+.slick-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -730,24 +866,31 @@ body{
     line-height: 3px;
     z-index: 5;
 }
-.slick-arrow:hover{
+
+.slick-arrow:hover {
     border-radius: 50%;
-    background-color:#F04C28;
+    background-color: #F04C28;
     color: #ffffff;
 }
-.slick-prev{
+
+.slick-prev {
     background-color: #09A603;
     left: -18px;
     color: #ffffff;
     border-radius: 100%;
 }
-.slick-next{
+
+.slick-next {
     right: -18px;
     background-color: #09A603;
     color: #ffffff;
     border-radius: 100%;
 }
+
+
 /* dấu chấm */
+
+
 /* .slick-dots{
     list-style: none;
     position: absolute;
@@ -775,13 +918,14 @@ body{
 
 
 /* page tìm kím */
-.page-search{
+
+.page-search {
     min-height: 500px;
     border: 1px solid #ffffff;
     background: #ffffff;
 }
 
-.search-h1{
+.search-h1 {
     margin: 40px 0;
 }
 

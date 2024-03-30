@@ -131,7 +131,8 @@
                         </span>
 
                         <div class="action-product display-flex">
-                            <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                            <button class="view-product"><a href="?mod=page&act=productDetail&id
+                            "><i class="fa-solid fa-eye"></i></a></button>
                             <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$cp['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>

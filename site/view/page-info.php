@@ -2,9 +2,34 @@
     <div class="info-title">
         <h1>Tài khoản của bạn</h1>
     </div>
-    <div class="align-items-start-1">
+    <div class="section-info align-items-start-1">
         <div class="list-cart-info">
+            <div class="img-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="">
+            </div>
+            <div class="range-user justify-content-space-between">
+                <p>Vàng</p>
+                <p>Kim cương</p>
+                <span class="dots-range"></span>
+            </div>
+            <div class="text-range">
+                <p>Còn 100 BEAN nữa bạn sẽ thăng hạng. Đổi quà không ảnh hưởng tới việc thăng hạng của bạn Chưa tích điểm</p>
+            </div>
+            <div class="list-item-info">
+                <div class="item-info">
+                    <a href=""> <i class="fa-solid fa-user"></i>Thông tin khách hàng</a>
+                </div>
+                <div class="item-info">
+                    <a href=""><i class="fa-solid fa-lock"></i> Đổi mật khẩu</a>
+                </div>
+                <div class="item-info">
+                    <a href="#"><i class="fa-solid fa-user-shield"></i>Quyền lợi thành viên</a>
+                </div>
+                <div class="item-info">
+                    <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Lịch sử mua hàng</a>
+                </div>
 
+            </div>
         </div>
         <div class="List-form-info">
             <h3>Thông tin của bạn</h3>
@@ -30,7 +55,12 @@
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
-                    <input id="password" name="pass" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                    <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
+                    <label for=""><i class="fa-solid fa-lock"></i></label>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <input id="address" name="pass" type="text" placeholder="Địa chỉ" class="form-control">
                     <label for=""><i class="fa-solid fa-lock"></i></label>
                     <span class="form-message"></span>
                 </div>

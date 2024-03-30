@@ -49,6 +49,10 @@ include_once '../model/user.php';
                 include_once 'view/template-header.php';
                 include_once   'view/page-contact.php';
                 include_once 'view/template-footer.php';
+            case 'productDetail':
+                include_once 'view/template-header.php';
+                include_once   'view/page-product-detail.php';
+                include_once 'view/template-footer.php';
         }
     }
 

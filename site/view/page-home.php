@@ -76,7 +76,7 @@
                     <span class="label-promotion"><?= $np['labelPromotion']?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$np['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <span class="label-promotion"><?= $sgs['labelPromotion']?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$sgs['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                         </span>
 
                         <div class="action-product display-flex">
-                            <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                            <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
                             <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$po['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                         <span class="label-promotion"><?= $fg['labelPromotion'] ?></span>
 
                         <div class="action-product display-flex">
-                            <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                            <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
                             <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$fg['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
@@ -250,7 +250,7 @@
                     <span class="label-promotion"><?=$bg['labelPromotion']?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$bg['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                     <span class="label-promotion"><?= $sg['labelPromotion'] ?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$np['productsID'] ?>  "><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>

@@ -1,16 +1,21 @@
-.login-form-list{
+.login-form-list {
     min-height: 400px;
     margin: 40px auto;
 }
+
+
 /*Trang login*/
+
 .tab {
     text-align: center;
     margin: 20px 0;
 }
-.tab a{
+
+.tab a {
     cursor: pointer;
     color: #0D6EFD;
 }
+
 .form {
     width: 500px;
     min-height: 400px;
@@ -23,15 +28,18 @@
     box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
     margin: 0 auto;
 }
-.form p{
+
+.form p {
     font-size: 16px;
     color: #000000;
     margin: 10px;
 }
+
 .form .heading {
     font-size: 30px;
     color: #000000;
 }
+
 .form .desc {
     text-align: center;
     color: #636d77;
@@ -70,13 +78,14 @@
     font-size: 15px;
 }
 
-.form-group label{
-    position: absolute ;
+.form-group label {
+    position: absolute;
     right: 15px;
     top: 12px;
     color: #636d77;
 }
-.form-account a i{
+
+.form-account a i {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
@@ -86,6 +95,7 @@
     box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
     background-color: rgb(0, 0, 0, 0.7);
 }
+
 .form-control:hover {
     border-color: #1dbfaf;
 }
@@ -125,91 +135,107 @@
 .spacer {
     margin-top: 36px;
 }
-.form-remember{
+
+.form-remember {
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
 }
-.form-remember label{
+
+.form-remember label {
     font-size: 16px;
     color: #000000;
     margin-right: 150px;
 }
-.form-remember input{
+
+.form-remember input {
     margin-right: 7px;
     border: 1px solid black;
 }
-.form-remember a{
+
+.form-remember a {
     font-size: 16px;
     color: #000000;
     text-decoration: none;
 }
 
-.error-message > p{
+.error-message>p {
     color: red;
 }
 
+
 /* trang quên mật khẩu */
-.section-forgot-password{
+
+.section-forgot-password {
     min-height: 600px;
     margin: 50px auto;
 }
 
-.forgot-password{
+.forgot-password {
     width: 500px;
-    min-height: 300px ;
+    min-height: 300px;
     border: 1px solid #000000;
     padding: 20px;
     border-radius: 10px;
 }
 
-.forgot-password h3{
+.forgot-password h3 {
     margin: 20px 0;
 }
-.forgot-password p{
+
+.forgot-password p {
     margin: 20px 0;
 }
-.forgot-password a{
+
+.forgot-password a {
     margin: 20px 0;
     color: #000000;
     display: block;
 }
+
+
 /* trang contact */
+
+
 /* trang info */
+
 .page-contact,
-.page-info{
+.page-info {
     min-height: 700px;
 }
+
 .section-info,
-.section-form-contact{
+.section-form-contact {
     width: 80%;
     min-height: 500px;
     margin: 40px auto;
-    border: 1px solid black;
 }
 
 .contact-title,
-.info-title{
+.info-title {
     width: 100%;
     height: 50px;
     text-align: center;
     line-height: 50px;
     margin: 40px auto;
 }
+
 .list-contact-info,
-.list-cart-info{
+.list-cart-info {
     width: 45%;
     min-height: 600px;
     border: 1px solid black;
+    border-radius: 10px;
 }
+
 .list-form-contact,
-.List-form-info{
+.List-form-info {
     width: 52%;
     min-height: 600px;
     border: 1px solid black;
 }
 
-.List-form-info .act-submit{
+.List-form-info .act-submit {
     width: 30%;
     height: 40px;
     cursor: pointer;
@@ -221,32 +247,109 @@
 }
 
 
+/* cart-info */
+
+.list-cart-info .img-info {
+    width: 90%;
+    height: 260px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.img-info img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.list-cart-info .range-user {
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid black;
+    margin: 20px auto;
+    position: relative;
+    /* padding: 0 10px; */
+}
+
+.list-cart-info .range-user .dots-range {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000000;
+    border-radius: 50%;
+    bottom: -5px;
+    left: 50%;
+}
+
+.list-cart-info .text-range {
+    width: 90%;
+    height: 60px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.list-cart-info .list-item-info {
+    width: 90%;
+    height: 160px;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.list-cart-info .list-item-info .item-info {
+    width: 90%;
+    height: 40px;
+    /* border: 1px solid red; */
+    line-height: 40px;
+}
+
+.list-cart-info .list-item-info .item-info a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 0 10px;
+}
+
+.list-cart-info .list-item-info .item-info a:hover {
+    background: #1ac7b6;
+}
+
+.list-cart-info .list-item-info .item-info a i {
+    margin-right: 20px;
+}
 
 
 /* contact */
+
 .List-form-info,
-.list-contact-info ,
-.list-form-contact{
+.list-contact-info,
+.list-form-contact {
     padding: 10px 30px;
     border-radius: 10px;
 }
+
 .List-form-info h3,
 .list-contact-info h3,
-.list-form-contact h3{
+.list-form-contact h3 {
     padding: 10px 0;
     margin: 5px 0;
 }
-.list-form-contact textarea{
+
+.list-form-contact textarea {
     border-radius: 10px;
     padding: 10px;
 }
-.contact-left-info{
+
+.contact-left-info {
     line-height: 30px;
     margin-top: 20px;
 }
 
+
 /*  */
-.container-bot{
+
+.container-bot {
     width: 100%;
     max-width: 1100px;
     margin: 50px auto;
@@ -257,21 +360,26 @@
     background-color: #232F3E;
     color: white;
 }
-.content-left{
+
+.content-left {
     padding-left: 20px;
 }
-.content-text{
+
+.content-text {
     font-size: 30px;
     font-weight: bold;
 }
-.content-right{
+
+.content-right {
     padding-right: 20px;
 }
-.content-right-text{
+
+.content-right-text {
     font-size: 30px;
     font-weight: bold;
 }
-.content-right-telephone{
+
+.content-right-telephone {
     background-color: #f5e61c;
     color: black;
     padding: 10px;

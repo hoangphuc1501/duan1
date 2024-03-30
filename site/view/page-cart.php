@@ -1,4 +1,4 @@
-<div class="page-cart container justify-content-space-between">
+<div class="page-cart container align-items-start">
     <h1>Giỏ hàng</h1>
     <div class="list-cart">
         <table class="add-cart-title">
@@ -7,7 +7,7 @@
                     <th style="width:30%">Tên sản phẩm</th>
                     <th style="width:15%">Hình ảnh</th>
                     <th style="width:15%">Giá</th>
-                    <th style="width:10%">Số lượng</th>
+                    <th style="width:12%">Số lượng</th>
                     <th style="width:15%">Thành tiền</th>
                     <th style="width:8%">xóa</th>
                 </tr>
