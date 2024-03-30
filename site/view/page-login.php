@@ -15,7 +15,7 @@
             </div>
             <div class="form-remember">
                 <label for=""><input type="checkbox" name="" id="">Nhớ mật khẩu</label>
-                <a href="forgotPassword.php">Quên mật khẩu</a>
+                <a href="?mod=user&act=forgotPassword">Quên mật khẩu</a>
             </div>
             <button class="form-submit" type="submit" name="login_submit">Đăng nhập</button>
             <p>hoặc sử dụng tài khoản của bạn</p>
@@ -28,11 +28,12 @@
                 <p>Bạn chưa có tài khoản?</p><a href="?mod=user&act=register">Đăng kí</a>
             </div>
             <div id="error-message"></div>
-            <?php if(isset($data)):?>
+            <?php if (isset($data)): ?>
                 <div class="alert " role="alert">
-                    <?=$data;?>
+                    <?= $data; ?>
                 </div>
-                <?php endif; unset($data);?>
+            <?php endif;
+            unset($data); ?>
     </div>
     </form>
     </div>

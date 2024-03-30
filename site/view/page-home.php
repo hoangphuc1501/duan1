@@ -77,7 +77,7 @@
 
                     <div class="action-product display-flex">
                         <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
-                        <button class="add-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$np['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
                 <?php endforeach;?>
@@ -115,7 +115,7 @@
 
                     <div class="action-product display-flex">
                         <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
-                        <button class="add-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$sgs['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
                 <?php endforeach;?>
@@ -164,7 +164,7 @@
 
                         <div class="action-product display-flex">
                             <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
-                            <button class="add-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                            <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$po['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -202,7 +202,7 @@
 
                         <div class="action-product display-flex">
                             <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
-                            <button class="add-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                            <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$fg['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -251,7 +251,7 @@
 
                     <div class="action-product display-flex">
                         <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
-                        <button class="add-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$bg['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
                 <?php endforeach;?>
@@ -289,7 +289,7 @@
 
                     <div class="action-product display-flex">
                         <button class="view-product"><a href="#"><i class="fa-solid fa-eye"></i></a></button>
-                        <button class="add-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$np['productsID'] ?>  "><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
                 <?php endforeach;?>
@@ -310,76 +310,17 @@
                 <h1>dịch vụ hàng đầu tại golfshop</h1>
             </div>
             <div class="list-top-service">
+                <?php foreach($service as $se) :?>
                 <div class="top-service">
-                    <img src="https://golfgroup.com.vn/wp-content/uploads/2023/06/hinh-anh-dich-vu-golf-tai-golfgroup-2.jpg"
+                    <img src="<?= $se['image']?>"
                         alt="">
-                    <h3>Booking sân golf</h3>
-                    <p>Booking sân tại GolfGroup - Tất cả các sân golf trên khắp cả nước! Đặt sân golf dễ dàng, nhanh
-                        chóng,
-                        chi phí cực tốt với dịch vụ booking của chúng tôi. Alogolf chỉ bằng một cuộc điện thoại chúng
-                        tôi sẽ
-                        giúp quý khách check thông tin, book sân, book caddies tất cả hệ thống sân, khắp các tỉnh thành.
-                    </p>
+                    <h3><?= $se['title']?></h3>
+                    <p><?= $se['content']?></p>
                     <div class="see-more display-flex">
-                        <a href=""><i class="fa-solid fa-circle-chevron-right"></i> Xem thêm</a>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i> Xem thêm</a>
                     </div>
                 </div>
-                <div class="top-service">
-                    <img src="https://golfgroup.com.vn/wp-content/uploads/2023/06/hinh-anh-dich-vu-golf-tai-golfgroup-2.jpg"
-                        alt="">
-                    <h3>Booking sân golf</h3>
-                    <p>Booking sân tại GolfGroup - Tất cả các sân golf trên khắp cả nước! Đặt sân golf dễ dàng, nhanh
-                        chóng,
-                        chi phí cực tốt với dịch vụ booking của chúng tôi. Alogolf chỉ bằng một cuộc điện thoại chúng
-                        tôi sẽ
-                        giúp quý khách check thông tin, book sân, book caddies tất cả hệ thống sân, khắp các tỉnh thành.
-                    </p>
-                    <div class="see-more display-flex">
-                        <a href=""><i class="fa-solid fa-circle-chevron-right"></i> Xem thêm</a>
-                    </div>
-                </div>
-                <div class="top-service">
-                    <img src="https://golfgroup.com.vn/wp-content/uploads/2023/06/hinh-anh-dich-vu-golf-tai-golfgroup-2.jpg"
-                        alt="">
-                    <h3>Booking sân golf</h3>
-                    <p>Booking sân tại GolfGroup - Tất cả các sân golf trên khắp cả nước! Đặt sân golf dễ dàng, nhanh
-                        chóng,
-                        chi phí cực tốt với dịch vụ booking của chúng tôi. Alogolf chỉ bằng một cuộc điện thoại chúng
-                        tôi sẽ
-                        giúp quý khách check thông tin, book sân, book caddies tất cả hệ thống sân, khắp các tỉnh thành.
-                    </p>
-                    <div class="see-more display-flex">
-                        <a href=""><i class="fa-solid fa-circle-chevron-right"></i> Xem thêm</a>
-                    </div>
-                </div>
-                <div class="top-service">
-                    <img src="https://golfgroup.com.vn/wp-content/uploads/2023/06/hinh-anh-dich-vu-golf-tai-golfgroup-2.jpg"
-                        alt="">
-                    <h3>Booking sân golf</h3>
-                    <p>Booking sân tại GolfGroup - Tất cả các sân golf trên khắp cả nước! Đặt sân golf dễ dàng, nhanh
-                        chóng,
-                        chi phí cực tốt với dịch vụ booking của chúng tôi. Alogolf chỉ bằng một cuộc điện thoại chúng
-                        tôi sẽ
-                        giúp quý khách check thông tin, book sân, book caddies tất cả hệ thống sân, khắp các tỉnh thành.
-                    </p>
-                    <div class="see-more display-flex">
-                        <a href=""><i class="fa-solid fa-circle-chevron-right"></i> Xem thêm</a>
-                    </div>
-                </div>
-                <div class="top-service">
-                    <img src="https://golfgroup.com.vn/wp-content/uploads/2023/06/hinh-anh-dich-vu-golf-tai-golfgroup-2.jpg"
-                        alt="">
-                    <h3>Booking sân golf</h3>
-                    <p>Booking sân tại GolfGroup - Tất cả các sân golf trên khắp cả nước! Đặt sân golf dễ dàng, nhanh
-                        chóng,
-                        chi phí cực tốt với dịch vụ booking của chúng tôi. Alogolf chỉ bằng một cuộc điện thoại chúng
-                        tôi sẽ
-                        giúp quý khách check thông tin, book sân, book caddies tất cả hệ thống sân, khắp các tỉnh thành.
-                    </p>
-                    <div class="see-more display-flex">
-                        <a href=""><i class="fa-solid fa-circle-chevron-right"></i> Xem thêm</a>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
 
@@ -408,72 +349,31 @@
                     <h3>Tin tức</h3>
                     <a href="#">Xem toàn bộ</a>
                 </div>
+                <?php foreach($newList as $nl) :?>
                 <div class="post-new align-items-start">
                     <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
+                            src="<?= $nl['image'] ?>"
                             alt=""></a>
-                    <h3 class="new-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024 </a>
+                    <h3 class="new-title"><a href="#"><?= $nl['title']?></a>
                     </h3>
                 </div>
-                <div class="post-new align-items-start">
-                    <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
-                            alt=""></a>
-                    <h3 class="new-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024 </a>
-                    </h3>
-                </div>
-                <div class="post-new align-items-start">
-                    <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
-                            alt=""></a>
-                    <h3 class="new-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024 </a>
-                    </h3>
-                </div>
-                <div class="post-new align-items-start">
-                    <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
-                            alt=""></a>
-                    <h3 class="new-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024 </a>
-                    </h3>
-                </div>
+                <?php endforeach; ?>
             </div>
             <div class="list-knowledge">
                 <div class="post-title justify-content-space-between">
                     <h3>Kiến thức golf</h3>
                     <a href="#">Xem toàn bộ</a>
                 </div>
+                <?php foreach($Knowledge as $kl) :?>
                 <div class="post-knowledge align-items-start">
                     <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
+                            src="<?= $kl['image'] ?>"
                             alt=""></a>
-                    <h3 class="knowledge-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024
+                    <h3 class="knowledge-title"><a href="#"><?= $kl['title']?>
                         </a>
                     </h3>
                 </div>
-                <div class="post-knowledge align-items-start">
-                    <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
-                            alt=""></a>
-                    <h3 class="knowledge-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024
-                        </a>
-                    </h3>
-                </div>
-                <div class="post-knowledge align-items-start">
-                    <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
-                            alt=""></a>
-                    <h3 class="knowledge-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024
-                        </a>
-                    </h3>
-                </div>
-                <div class="post-knowledge align-items-start">
-                    <a href="#"><img
-                            src="https://golfcity.com.vn/wp-content/uploads/2020/12/cach-tinh-diem-golf-3-445x296.jpg"
-                            alt=""></a>
-                    <h3 class="knowledge-title"><a href="#">Cách Tính Điểm Golf Chuẩn Xác Nhất, Cập Nhật Mới Nhất 2024
-                        </a>
-                    </h3>
-                </div>
+                <?php endforeach; ?>
 
             </div>
         </div>

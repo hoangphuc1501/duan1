@@ -3,7 +3,7 @@
     // hàm lấy danh mục
     function categoryList(){
         $sql = "SELECT * FROM categories";
-        return pdo_query($sql);
+        return pdo_query($sql,);
     }
     // hàm chia page
     // function categoryPage($page){

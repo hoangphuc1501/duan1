@@ -6,9 +6,9 @@ if(isset($mod)){
         case 'page':
             include_once 'controller/page.php';
             break;
-        // case 'cart':
-        //     include_once 'controller/cart.php';
-        //     break;
+        case 'cart':
+            include_once 'controller/cart.php';
+            break;
         case 'user':
             include_once 'controller/user.php';
             break;
@@ -18,7 +18,7 @@ if(isset($mod)){
     }
     
 }else{
-    header('location: ?mod=page&act=product');
+    header('location: ?mod=user&act=info');
 }
 
 ?>

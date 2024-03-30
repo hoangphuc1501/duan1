@@ -105,24 +105,6 @@ function pdo_query_value($sql){
     }
 }
 
-function pdo_query_one_limit($sql, $limit = null){
-    try{
-        $conn = pdo_get_connection();
-        $stmt = $conn->prepare($sql);
-        if ($limit !== null) {
-            $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
-        }
-        $stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        return $row;
-    }
-    catch(PDOException $e){
-        throw $e;
-    }
-    finally{
-        unset($conn);
-    }
-}
 
 
 

@@ -1,0 +1,113 @@
+.page-cart{
+    min-height: 600px;
+    border: 1px solid red;
+}
+
+.cart-title{
+    display: block;
+}
+.page-cart h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.list-cart{
+    width: 69%;
+    min-height: 500px;
+    border: 1px solid blue;
+}
+.add-cart-title{
+    width: 100%;
+    height: auto;
+}
+.add-cart-title thead tr th{
+    padding: 10px;
+    color: #ffffff;
+    background: #F04C28;
+    border: 1px solid #F04C28;
+}
+.add-cart-title tbody tr td{
+    padding: 10px;
+    color: #ffffff;
+    background: #F04C28;
+    border: 1px solid #F04C28;
+    text-align: center;
+}
+
+.payment-cart{
+    width: 26%;
+    min-height: 500px;
+    border: 1px solid blue;
+}
+
+.payment-cart h3{
+    background: #DEDEDE;
+    padding: 10px 5px;
+    text-align: center;
+}
+.voucher ,
+.total-payment,
+.provisional {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.delivery{
+    width: 100%;
+    height: 85px;
+    padding: 10px;
+}
+
+.delivery .list-shipping-fee {
+    width: 70%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.voucher input{
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+}
+.voucher button{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.act-payment button{
+    padding: 10px;
+    background: #DEDEDE;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.return-update-cart{
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.cart-update,
+.cart-return{
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    background: #DEDEDE;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart-update a,
+.cart-return a{
+    text-decoration: none;
+    color: #000000;
+}
+.cart-return a i{
+    margin-right: 10px;
+}
+
