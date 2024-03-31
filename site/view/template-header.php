@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/css/product.css">
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
     <title>Document</title>
 </head>
 

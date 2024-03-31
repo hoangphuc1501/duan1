@@ -25,6 +25,11 @@
                 <span class="form-message"></span>
             </div>
             <div class="form-group">
+                <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
+                <label for=""><i class="fa-solid fa-phone"></i></label>
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
                 <input id="password" name="pass" type="password" placeholder="Nhập mật khẩu" class="form-control">
                 <label for=""><i class="fa-solid fa-lock"></i></label>
                 <span class="form-message"></span>
@@ -35,6 +40,7 @@
                 <label for=""><i class="fa-solid fa-lock"></i></label>
                 <span class="form-message"></span>
             </div>
+
             <?php if (isset ($data)): ?>
                 <div class="alert alert-warning" role="alert">
                     <?= $data; ?>

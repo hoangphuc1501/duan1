@@ -23,7 +23,7 @@ if (isset($act)) {
                 if ($pass != $repass) {
                     $data = "Nhập mật khẩu không khớp";
                 } else {
-                    userRegister($userName, $name, $email, $pass, $phone);
+                    userRegister($userName, $name, $email, $pass, $phone,$address);
                     header('location: ?mod=user&act=login');
                 }
             }
@@ -32,6 +32,9 @@ if (isset($act)) {
             include_once 'view/template-footer.php';
             break;
         case 'info':
+            $id = $_SESSION['user']['usersID'];
+            // print_r($id);
+            $user = userOne($id);
             include_once 'view/template-header.php';
             include_once 'view/page-info.php';
             include_once 'view/template-footer.php';
@@ -50,11 +53,11 @@ if (isset($act)) {
                 $forgotPass = forgotPass($email);
                 if ($forgotPass) {
                     $newPassword = substr(md5(rand(0, 999999)), 0, 8);
-                    $updatedPass = updatedPass($email, $newPassword);
-
+                    // print_r($email . " " . $newPassword);
+                    $updatedPass = updatedPass($email, $newPassword);       
                     if ($updatedPass) {
                         $Notification = "Mật khẩu đã được cập nhật thành công.";
-                        
+                        // chờ hàm php mail
                     } else {
                         $Notification = "Có lỗi xảy ra khi cập nhật mật khẩu.";
                     }
@@ -70,6 +73,25 @@ if (isset($act)) {
             include_once 'view/template-header.php';
             include_once 'view/page-change-password.php';
             include_once 'view/template-footer.php';
+            break;
+        case 'updateInfo':
+            if(isset($update_info_submit)){
+                $user = userOne($id);
+                if($_FILES['image']['name'] != null){
+                    userUpdate($id,$userName, $name, $email, $phone, $address,$_FILES['image']['name']);
+                    move_uploaded_file(['image']['tmp_name'],'../assets/image/'.$_FILES['image']['name']);
+                }else{
+                    userUpdate($id,$userName, $name, $email, $phone, $address, $user['image']);
+                }
+                header('location: ?mod=user&act=info');
+            }
+            include_once 'view/template-header.php';
+            include_once 'view/page-update-info.php';
+            include_once 'view/template-footer.php';
+            break;
+        case 'logout':
+            unset($_SESSION['user']);
+            header('location: ?mod=page&act=home');
             break;
     }
 }

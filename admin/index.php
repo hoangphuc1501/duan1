@@ -16,5 +16,5 @@ if (isset($mod)) {
             break;
     }
 } else {
-    header('location: ?mod=user&act=list');
+    header('location: ?mod=category&act=category');
 }

@@ -6,10 +6,15 @@ function checkLogin($email, $pass)
     return pdo_query_one($sql, $email, $pass);
 }
 
-function userRegister($userName, $name, $email, $pass, $phone)
+function userRegister($userName, $name, $email, $pass, $phone, $address)
 {
-    $sql = "INSERT INTO users(userName, fullName, email, password, phoneNumber) VALUE (?,?,?,?,?)";
-    return pdo_execute($sql, $userName, $name, $email, $pass, $phone);
+    $sql = "INSERT INTO users(userName, fullName, email, password, phoneNumber, address) VALUE (?,?,?,?,?,?)";
+    return pdo_execute($sql, $userName, $name, $email, $pass, $phone,$address);
+}
+
+function userOne($id){
+    $sql = "SELECT * FROM users WHERE usersID=?";
+    return pdo_query_one($sql,$id);
 }
 
 // hàm quên mật khẩu
@@ -19,8 +24,14 @@ function forgotPass($email)
     return pdo_query_one($sql, $email);
 }
 function updatedPass($email, $newPassword){
-    $sql = "UPDATE users SET password = ? WHERE email = ?";
-    return pdo_execute($sql, $email, $newPassword);
+    $sql = "UPDATE users SET password = '$newPassword' WHERE email = '$email'";
+    pdo_execute($sql);
+    return $sql;
+}
+
+function userUpdate($id,$userName, $name, $email, $phone, $address,$image){
+    $sql = "UPDATE users SET userName=?, name=?, email=?, $phone=?, address=?, image=? WHERE usersID";
+    return pdo_execute($sql, $userName, $name, $email, $phone, $address,$image, $id);
 }
 // function updatePass($email, $newPassword){
 //     $sql = "UPDATE users SET password = ? WHERE email = ?";
