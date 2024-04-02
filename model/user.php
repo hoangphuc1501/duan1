@@ -28,6 +28,10 @@ function updatedPass($email, $newPassword){
     pdo_execute($sql);
     return $sql;
 }
+function changePass($email ,$oldPassword, $newPassword1){
+    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$oldPassword'";
+    return pdo_query($sql);
+}
 
 function userUpdate($id,$userName, $name, $email, $phone, $address,$image){
     $sql = "UPDATE users SET userName=?, name=?, email=?, $phone=?, address=?, image=? WHERE usersID";

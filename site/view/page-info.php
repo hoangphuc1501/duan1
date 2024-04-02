@@ -5,11 +5,8 @@
     <div class="section-info align-items-start-1">
         <div class="list-cart-info">
             <div class="img-info">
-<<<<<<< HEAD
-                <img src="../asset/image/<?= $user['image'] ?>" alt="">
-=======
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="">
->>>>>>> 6fcb87cf774c25a42a4b41365648711ba4387fe3
+
             </div>
             <div class="range-user justify-content-space-between">
                 <p>Vàng</p>
@@ -21,17 +18,14 @@
             </div>
             <div class="list-item-info">
                 <div class="item-info">
-<<<<<<< HEAD
                     <a href="?mod=user&act=info"> <i class="fa-solid fa-user"></i>Thông tin khách hàng</a>
                 </div>
                 <div class="item-info">
                     <a href="?mod=user&act=changePassword"><i class="fa-solid fa-lock"></i> Đổi mật khẩu</a>
-=======
                     <a href=""> <i class="fa-solid fa-user"></i>Thông tin khách hàng</a>
                 </div>
                 <div class="item-info">
                     <a href=""><i class="fa-solid fa-lock"></i> Đổi mật khẩu</a>
->>>>>>> 6fcb87cf774c25a42a4b41365648711ba4387fe3
                 </div>
                 <div class="item-info">
                     <a href="#"><i class="fa-solid fa-user-shield"></i>Quyền lợi thành viên</a>
@@ -66,10 +60,8 @@
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
-<<<<<<< HEAD
                     <input id="address" name="address" type="text" placeholder="<?= $user['address'] ?>" class="form-control">
                     <label for=""><i class="fa-solid fa-location-dot"></i></label>
-=======
                     <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
                     <label for=""><i class="fa-solid fa-lock"></i></label>
                     <span class="form-message"></span>
@@ -77,10 +69,9 @@
                 <div class="form-group">
                     <input id="address" name="pass" type="text" placeholder="Địa chỉ" class="form-control">
                     <label for=""><i class="fa-solid fa-lock"></i></label>
->>>>>>> 6fcb87cf774c25a42a4b41365648711ba4387fe3
                     <span class="form-message"></span>
                 </div>
-                
+
                 <div class="list-act-info justify-content-space-between">
                 <button class="act-submit" name="update_info_submit" type="submit"><a href="?mod=user&act=updateInfo&id=<?=$user['usersID']?>">Thay đổi thông tin</a></button>
                 <?php if($user['admin']==1):?>

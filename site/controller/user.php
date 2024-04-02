@@ -70,6 +70,21 @@ if (isset($act)) {
             include_once 'view/template-footer.php';
             break;
         case 'changePassword':
+            if(isset($change_submit)){
+                $changePass = changePass($email ,$oldPassword, $newPassword1);
+                if($newPassword1 !== $newPassword2){
+                    $Notification = "Mật khẩu mới không khớp. Vui lòng nhập lại.";
+                } else {
+                    if($changePass){
+                        updatedPass($email, $newPassword1);
+                        $Notification = "Mật khẩu đã được cập nhật thành công.";
+                        // header('location: ?mod=user&act=info');
+                        // Gửi email thông báo
+                    } else {
+                        $Notification = "Mật khẩu cũ không đúng.";
+                    }
+                }
+            }
             include_once 'view/template-header.php';
             include_once 'view/page-change-password.php';
             include_once 'view/template-footer.php';
