@@ -23,7 +23,7 @@
                     <td>
                         <?= $ul['userName'] ?>
                     </td>
-                    <td><img src="../assets/img/<?= $ul['image'] ?>" width="60px" alt=""></td>
+                    <td><img src="../admin/HinhAnh/<?= $ul['image'] ?>" width="60px" alt=""></td>
                     <td>
                         <?= $ul['email'] ?>
                     </td>
@@ -36,11 +36,12 @@
                     </td>
 
                     <td>
-                        <?= $ul['status'] ?>
+                    <?php echo ($ul['status'] == 1) ? "Admin" : "Khách hàng"; ?>
+                    
                     </td>
                     <td>
-                        <a href="?mod=product&act=edit&id=<?= $ul['usersID'] ?>" class="btn btn-success">Sửa</a>
-                        <a href="?mod=product&act=delete&id=<?= $ul['usersID'] ?>" class="btn btn-danger">Xóa</a>
+                    <a class="btn btn-primary" href="?mod=user&act=edit&id=<?=$ul['usersID']?>">Sửa</a>
+                    <a class="btn btn-danger" href="?mod=user&act=delete&id=<?=$ul['usersID']?>">Xóa</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

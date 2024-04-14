@@ -15,7 +15,7 @@
                                     if ($scl['parentID'] != 0 && $scl['parentID'] == $item['categoriesID']) {
                                         ?>
                                         <div class="sub-item">
-                                            <a href="?mod=page&act=product&id<?= $scl['categoriesID'] ?>">
+                                            <a href="?mod=page&act=product&id=<?= $scl['categoriesID'] ?>">
                                                 <?= $scl['categoryName'] ?>
                                             </a>
                                         </div>
@@ -44,13 +44,13 @@
                             <a href="<?=$_SERVER['REQUEST_URI']?>&order=DESC">+ Giá giảm dần</a>
                         </div>
                         <div class="sub-item">
-                            <a href="#">+ A - Z</a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&order=AZ">+ A - Z</a>
                         </div>
                         <div class="sub-item">
-                            <a href="#">+ Z - A</a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&order=ZA">+ Z - A</a>
                         </div>
                         <div class="sub-item">
-                            <a href="#">+ Mới nhất</a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&order=NEWEST">+ Mới nhất</a>
                         </div>
                     </div>
                 </div>
@@ -62,19 +62,19 @@
                     </a>
                     <div class="sub-fillter">
                         <div class="sub-item">
-                            <a href="<?=$_SERVER['REQUEST_URI']?>&min_price=0&max_price=1000000">+ Dưới 1.000.000 <sup>đ</sup></a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&minPrice=0&maxPrice=1000000">+ Dưới 1.000.000 <sup>đ</sup></a>
                         </div>
                         <div class="sub-item">
-                            <a href="<?=$_SERVER['REQUEST_URI']?>&min_price=1000000&max_price=5000000">+ 1.000.000 - 5.000.000 <sup>đ</sup></a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&minPrice=1000000&maxPrice=5000000">+ 1.000.000 - 5.000.000 <sup>đ</sup></a>
                         </div>
                         <div class="sub-item">
-                            <a href="<?=$_SERVER['REQUEST_URI']?>&min_price=5000000&max_price=10000000">+ 5.000.000 - 10.000.000 <sup>đ</sup></a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&minPrice=5000000&maxPrice=10000000">+ 5.000.000 - 10.000.000 <sup>đ</sup></a>
                         </div>
                         <div class="sub-item">
-                            <a href="<?=$_SERVER['REQUEST_URI']?>&min_price=10000000&max_price=20000000">+ 10.000.000 - 20.000.000 <sup>đ</sup></a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&minPrice=10000000&maxPrice=20000000">+ 10.000.000 - 20.000.000 <sup>đ</sup></a>
                         </div>
                         <div class="sub-item">
-                            <a href="<?=$_SERVER['REQUEST_URI']?>&min_price=20000000&max_price=9999999999999">+ Trên 20.000.000 <sup>đ</sup></a>
+                            <a href="<?=$_SERVER['REQUEST_URI']?>&minPrice=20000000&maxPrice=9999999999999">+ Trên 20.000.000 <sup>đ</sup></a>
                         </div>
                     </div>
                 </div>
@@ -85,21 +85,12 @@
                 <h1>Tất cả sản phẩm</h1>
                 <div class="justify-content-space-between">
                     <div class="list-product-title justify-content-space-between">
-                        <a href="#">Tất cả</a>
+                        <a href="?mod=page&act=product">Tất cả</a>
                         <a href="#">Nam</a>
                         <a href="#">Nữ</a>
                         <a href="#">Trẻ em</a>
                     </div>
                     <div class="form-horizontal display-flex">
-                        <label for="">Sắp xếp</label>
-                        <select name="sort_option" id="">
-                            <option value=""></option>
-                            <option value="<?= $a_z ?>">Z->A</option>
-                            <option value="">A->Z</option>
-                            <option value="">Giá tăng dần</option>
-                            <option value="">Giá giảm dần</option>
-                            <option value="">Mới trước</option>
-                        </select>
                     </div>
                 </div>
             </div>
@@ -108,8 +99,8 @@
                 <?php foreach ($collectionProduct as $cp): ?>
                     
                     <div class="item-product">
-                        <a href="#"><img src="<?= $cp['image'] ?>" alt=""></a>
-                        <h3 class="product-title"><a href="#">
+                        <a href="?mod=page&act=productDetail&id=<?=$cp['productsID']?>"><img src="<?= $cp['image'] ?>" alt=""></a>
+                        <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$cp['productsID']?>">
                                 <?= $cp['productName'] ?>
                             </a>
                         </h3>
@@ -121,17 +112,17 @@
                             <i class="fa-solid fa-star"></i>
                         </span>
                         <span class="promotion-price">
-                            <?= $cp['promotionalPrice'] ?><sup>đ</sup>
+                            <?= number_format($cp['promotionalPrice'],0,'.','.') ?><sup>đ</sup>
                         </span>
                         <span class="price"><del>
-                                <?= $cp['price'] ?><sup>đ</sup>
+                                <?= number_format($cp['price'],0,'.','.') ?><sup>đ</sup>
                             </del></span>
                         <span class="label-promotion">
                             <?= $cp['labelPromotion'] ?>
                         </span>
 
                         <div class="action-product display-flex">
-                            <button class="view-product"><a href="?mod=page&act=productDetail&id
+                            <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$cp['productsID']?>
                             "><i class="fa-solid fa-eye"></i></a></button>
                             <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$cp['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>

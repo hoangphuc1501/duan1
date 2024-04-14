@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col-md-6 ">
-                <img class="my-3" src="../assets/img/<?= $getCategory['image'] ?>" width="400" height="200" alt="">
+                <img class="my-3" src="../admin/HinhAnh/<?= $getCategory['image'] ?>" width="400" height="200" alt="">
             </div>
         </div>
 

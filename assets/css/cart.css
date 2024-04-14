@@ -115,14 +115,19 @@
 }
 
 .act-payment button {
-    padding: 10px;
+    padding: 15px;
     background: #DEDEDE;
     border: none;
     border-radius: 10px;
     width: 90%;
     cursor: pointer;
 }
-
+.act-payment button a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 111px;
+}
 .return-update-cart {
     width: 100%;
     height: 50px;
@@ -147,4 +152,125 @@
 
 .cart-return a i {
     margin-right: 10px;
+}
+/*  */
+.list-info-delivery{
+    width: 69%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-delivery{
+    width: 58%;
+    min-height: 400px;
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #000000;
+}
+
+/* .list-info-delivery h3{
+    margin: 10px;
+} */
+.list-info-delivery p{
+    margin: 10px;
+}
+.list-info-delivery p a{
+    color: #2997ff;
+}
+
+/*  */
+.transport-payment{
+    width: 40%;
+    min-height: 400px;
+    margin: 10px ;
+}
+.transport-payment h3{
+    margin: 10px;
+}
+.transport-payment input{
+    margin: 5px 20px;
+}
+.transport,
+.payment{
+    width: 100%;
+    min-height: 100px;
+    box-shadow: 0 0 1px #000000;
+    border-radius: 10px;
+}
+.transport-item,
+.payment-item{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 0 1px #000000; */
+    /* border-radius: 10px; */
+    border-bottom: 1px solid #DEDEDE;
+}
+.transport-item:last-child,
+.payment-item:last-child{
+    border-bottom: none;
+}
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*  */
+.page-payment{
+    min-height: 600px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page-payment .check-payment{
+    font-size: 50px;
+    color: #33CC33;
+}
+
+.page-payment .payment-title h3{
+    color: red;
+    font-size: 26px;
+    margin: 10px 0;
+}
+.page-payment .payment-title p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.page-payment .act-payment{
+    width: 36%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-payment .act-payment .act-payment-detail{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.page-payment .act-payment .act-payment-detail:hover{
+    background: #FF0000;
+    color: #ffffff;
+    border: none;
+}
+
+.page-payment .act-payment .continue-shopping{
+    background: #FF0000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 16px 50px;
+    text-decoration: none;
 }

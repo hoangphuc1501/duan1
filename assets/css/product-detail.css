@@ -1,59 +1,34 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
-    width: 100%;
-    background: #F4F4F4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.wrapper {
-    width: 100%;
-    margin: 0 auto;
-} */
 
 .product-single {
     min-height: 500px;
     margin: 40px auto;
-    border: 1px solid red;
     background: #ffffff;
 }
-
-
 /*chi tiết*/
 
 
 /*img*/
 
 .detail-product-list-img {
-    width: 42%;
-    height: 650px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid red;
-    justify-content: flex-start;
+    width: 49%;
+    height: 670px;
 }
 
 .detail-product-list-img img {
-    width: 580px;
-    height: 525px;
+    width: 680px;
+    height: 550px;
     background-color: #ffffff;
     border-radius: 20px;
 }
 
 .list-image {
     display: flex;
+    width: 100%;
+    height: 100px;
 }
 
 .list-image div {
-    flex: 1;
     padding: 1px;
 }
 
@@ -72,8 +47,8 @@ body {
 
 .control {
     position: absolute;
-    top: 220px;
-    font-size: 30px;
+    top: 240px;
+    font-size: 20px;
     border: 1px dotted black;
     padding: 5px 10px;
     border-radius: 50%;
@@ -101,9 +76,8 @@ body {
 /*  */
 
 .detail-product-list-text {
-    width: 55%;
+    width: 49%;
     min-height: 500px;
-    border: 1px solid black;
 }
 
 .detail-product-list-text h1 {
@@ -112,7 +86,7 @@ body {
 }
 
 .detail-product-list-text .type-brand-code {
-    width: 505px;
+    width: 100%;
     height: auto;
     margin: 5px;
     padding: 5px 0;
@@ -120,9 +94,10 @@ body {
 
 .detail-product-list-text .type-brand-code .brand,
 .detail-product-list-text .type-brand-code .type {
-    width: 130px;
+    width: 165px;
     height: auto;
-    border-right: 2px solid black
+    border-right: 2px solid black;
+    text-align: center;
 }
 
 .detail-product-list-text .type-brand-code .brand a,
@@ -160,15 +135,16 @@ body {
 }
 
 .detail-product-list-text .type-brand-code .code {
-    width: 200px;
+    width: 350px;
     height: auto;
     padding: 5px;
+    text-align: center;
 }
 
 .detail-product-list-text .list-price {
     width: 400px;
     height: auto;
-    padding: 5px 0;
+    padding: 5px;
 }
 
 .detail-product-list-text .list-price .price {
@@ -224,40 +200,105 @@ body {
 } */
 
 
-/* số lượng */
 
-.quantity-detail {
-    width: 500px;
+/*  */
+
+.detail-product-textsale{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+}
+.detail-product-textsale h3{
+    padding: 5px;
+}
+.detail-product-textsale p{
+    color: #000;
+    font-size: 15px;
+    padding: 10px;
+}
+.detail-product-textsale small{
+    color: #000;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    margin: 0px 10px;
+    border-bottom: 1px solid #414141;
+}
+.detail-product-textsale ul{
+    margin: 10px 26px;
+}
+.detail-product-textsale ul li{
+    margin: 15px 0;
+    font-size: 14px;
+    color: #000;
+}
+.detail-product-textsale ul li a{
+    text-decoration: none;
+    color: #2997ff;
+}
+.detail-product-endow-pay{
+    width: 100%;
+    min-height: 300px;
+    margin: 10px 0;
+}
+
+.btn-buy-full button{
+    font-size: 20px;
+    background: #0071e3;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.btn-buy-full button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px 283px;
+}
+.btn-pay-taichinh{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-pay-taichinh-text{
+    width: 330px;
     height: 60px;
-    /* border: 1px solid black; */
-    margin: 5px;
-}
-
-.quantity-detail-buy {
-    /* border: 1px solid black; */
-    width: 100px;
-    height: 30px;
-    margin-top: 5px;
-}
-
-.quantity-detail-buy a {
-    border: 1px solid black;
-    padding: 5px;
-    font-size: 12px;
-    color: #000000;
-    /* border-radius: 2px; */
-}
-
-.quantity-detail-buy .amount-product {
-    width: 40px;
-    border-top: 1px solid black;
     text-align: center;
-    padding: 5px;
-    font-size: 12px;
-    border-bottom: 1px solid black;
+    color: #ffffff;
+    text-decoration: none;
+    background: #0071e3;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 10px 0;
+    margin: 0 5px;
 }
+.detail-product-garantie{
+    width: 100%;
+    height: 200px;
+    list-style: none;
+    margin: 10px 0;
 
-
+}
+.detail-product-garantie li{
+    color: #000;
+    font-size: 15px;
+    margin: 15px 10px;
+}
+.detail-product-garantie li i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.detail-product-garantie li a{
+    color: #2997ff;
+    text-decoration: none;
+}
 /*  Thêm sản phẩm*/
 
 .add-product-detail {
@@ -286,11 +327,10 @@ body {
 }
 
 
-/* danh sách hình ảnh và quâm */
+/* danh sách hình ảnh và quan tâm */
 
 .list-product-detail-img {
     min-height: 700px;
-    border: 1px solid black;
     margin: 40px auto;
 }
 
@@ -300,37 +340,73 @@ body {
 .list-product-detail-img .product-list-img {
     width: 69%;
     min-height: 700px;
-    border: 1px solid black;
 }
 
 .list-product-detail-img .product-list-img-title {
     width: 100%;
-    border: 1px solid black;
     height: 50px;
 }
 
-.product-list-img-title .brand-title,
-.product-list-img-title .detail-title {
-    width: 30%;
+.product-list-img-title .brand-option,
+.product-list-img-title .detail-option {
+    width: 50%;
     height: 100%;
-    border: 1px solid blue;
     text-align: center;
     line-height: 50px;
+    background: #DDDDDD;
 }
-
-.product-list-img-title .brand-title a,
-.product-list-img-title .detail-title a {
+.product-list-img-title .brand-option{
+    background: none;
+}
+.product-list-img-title .brand-option a,
+.product-list-img-title .detail-option a {
     text-decoration: none;
     color: #000;
     padding: 16px 90px;
-    background: #d30000;
+}
+.detail-list-img .title{
+    margin: 10px;
+}
+.list-product-detail-img .product-img{
+    width: 100%;
+    min-height: 500px;
 }
 
-
+.list-product-detail-img .product-img img{
+    width: 100%;
+    height: 600px;
+}
+.list-product-detail-img .product-note{
+    width: 90%;
+    height: 70px;
+    margin: 10px auto;
+    padding: 5px;
+    background: #A3E1FF;
+    border-radius: 10px;
+}
 /* có thể bạn quan tâm */
 
 .list-product-detail-img .maybe-you-care {
     width: 30%;
     min-height: 700px;
-    border: 1px solid black;
 }
+.maybe-you-care .news-new-product-item h3{
+    width: 100%;
+    height: 40px;
+    background: #296E38;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.new-product-item .promotion-price{
+    color: #FF0000;
+    margin-top: 5px;
+}
+.new-product-item .price{
+    color: #BEBEBE;
+    margin-top: 5px;
+}
+
+

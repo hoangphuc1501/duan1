@@ -15,16 +15,16 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($productPage as $ps) :?>
+            <?php foreach($productList as $ps) :?>
             <tr>
                 <td><?=$ps['productsID']?></td>
                 <td><?=$ps['productName']?></td>
                 <td><?=$ps['price']?> đ</td>
                 <td><?=$ps['promotionalPrice']?> đ</td>
-                <td><img src="../assets/img/<?=$sp['image']?>" width="60px" alt=""></td>
-                <td><?=$ps['categoryName']?></td>
+                <td><img src="../admin/HinhAnh/<?=$ps['image']?>" width="60px" alt=""></td>
+                <td><?=$ps['categoriesID']?></td>
                 
-                <td><?=$ps['status']?></td>
+                <td><?php echo ($ps['status'] == 1) ? 'Đang hoạt động' : 'Tạm ngưng'; ?></td>
                 <td>
                     <a href="?mod=product&act=edit&id=<?=$ps['productsID']?>" class="btn btn-success">Sửa</a>
                     <a href="?mod=product&act=delete&id=<?=$ps['productsID']?>" class="btn btn-danger">Xóa</a>
@@ -34,7 +34,7 @@
         </tbody>
     </table>
     <!-- danh sách sản phẩm có phân trang -->
-    <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+    <!-- <nav aria-label="Page navigation example" class="d-flex justify-content-center">
         <ul class="pagination">
             <?php for($i= 1; $i <= $numberPage; $i++) :?>
             <li class="page-item">
@@ -42,7 +42,7 @@
             </li>
             <?php endfor; ?>
         </ul>
-    </nav>
+    </nav> -->
 
 
 </div>

@@ -6,7 +6,7 @@
         <form action="" method="post">
         <div class="form-group">
                 <input id="email" name="email" type="text" placeholder="email" class="form-control">
-                <label for=""><i class="fa-solid fa-lock"></i></label>
+                <label for=""><i class="fa-solid fa-envelope"></i></label>
                 <span class="form-message"></span>
             </div>
             <div class="form-group">

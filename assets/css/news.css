@@ -1,0 +1,107 @@
+.page-new{
+    min-height: 800px;
+    background: #ffffff;
+}
+
+.page-new .new-title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 40px auto ;
+}
+
+
+.page-new .new-title h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* list tin tức */
+.page-new .list-new-item{
+    width: 68%;
+    min-height: 800px;
+    /* border: 1px solid black; */
+}
+
+.list-new-item .new-item{
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px dashed #ddd;
+    margin-top: 20px;
+}
+.list-new-item .new-item img{
+    width: 35%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.list-new-item .new-item .new-text{
+    width: 64%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.list-new-item .new-item .new-text a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+.list-new-item .new-item .new-text .author-time{
+    display: flex;
+    margin: 10px 0;
+}
+.list-new-item .new-item .new-text .author-time {
+    width: 230px;
+    padding: 10px 0;
+}
+.list-new-item .new-item .new-text .author-time p i{
+    margin-right: 5px;
+}
+/* list sản phẩm */
+.page-new .list-news-product-item{
+    width: 28%;
+    min-height: 800px;
+}
+
+.page-new .list-news-product-item h3{
+    width: 100%;
+    height: 40px;
+    background: #296E38;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.new-product-item{
+    width: 100%;
+    height: 180px;
+    /* border: 1px saddlebrown solid; */
+    border-top: 1px dashed #ddd;
+    /* padding: 10px 0; */
+    margin-bottom: 20px;
+}
+.new-product-item .news-img-item{
+    width: 49%;
+    height: 180px;
+    padding-top: 10px;
+}
+.new-product-item .news-img-item img{
+    width: 100%;
+    height: 100%;
+}
+.new-product-item .product-item-text{
+    width: 49%;
+    height: 180px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.new-product-item .product-item-text a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}

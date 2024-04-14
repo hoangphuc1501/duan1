@@ -3,6 +3,7 @@
 //================
 //trang chủ
 //================
+
 // hàm show Sản phẩm mới
     function newProduct(){
         $sql = "SELECT * FROM products ORDER BY creationDate DESC LIMIT 8;";
@@ -15,23 +16,23 @@
     }
 // hàm sản phẩm quần áo
     function fashionGolf() {
-        $sql = "SELECT * FROM products WHERE categoriesID = 5 LIMIT 8";
+        $sql = "SELECT * FROM products WHERE categoriesID = 37 OR categoriesID = 38 LIMIT 8";
         return pdo_query($sql);
     }
     // hàm show sản phẩm đặc biệt
 function stickGolfSpecial() {
-    $sql = "SELECT * FROM products WHERE categoriesID = 1 ORDER BY labelPromotion DESC LIMIT 8";
+    $sql = "SELECT * FROM products WHERE categoriesID = 14 OR categoriesID = 15  ORDER BY labelPromotion DESC LIMIT 12";
     return pdo_query($sql);
 }
 
 // hàm show giày golf
 function shoeGolf() {
-    $sql = "SELECT * FROM products WHERE categoriesID = 3 LIMIT 8";
+    $sql = "SELECT * FROM products WHERE categoriesID = 28 OR categoriesID = 29 LIMIT 8";
     return pdo_query($sql);
 }
 // hàm show túi golf
 function bagGolf() {
-    $sql = "SELECT * FROM products WHERE categoriesID = 2 LIMIT 8";
+    $sql = "SELECT * FROM products WHERE categoriesID = 23 OR categoriesID = 24 LIMIT 8";
     return pdo_query($sql);
 }
 
@@ -40,19 +41,53 @@ function productOne($id){
     return pdo_query_one($sql, $id);
 }
 
+// hàm show hình ảnh 
+function listProductImage($id){
+    $sql = "SELECT * FROM productsimage WHERE productsID=?";
+    return pdo_query($sql, $id);
+}
+
 //================
 //Trang product
 //================
 
 // hàm show sản phẩm
-    function collectionProduct($id, $minPrice, $maxPrice, $order){
-        $sql = "SELECT * FROM products WHERE categoriesID  AND promotionalPrice > ? AND  promotionalPrice < ? ORDER BY promotionalPrice $order";
-        return pdo_query($sql, $id, $minPrice, $maxPrice, $order);
-    }
-    // function filterProduct($categoriesID, $minPrice, $maxPrice, $order){
-    //     $sql = "SELECT * FROM products WHERE categoriesID AND promotionalPrice > ? AND  promotionalPrice < ? ORDER BY promotionalPrice $order";
-    //     return pdo_query($sql,$categoriesID, $minPrice, $maxPrice, $order);
+    // function collectionProduct($id, $minPrice, $maxPrice, $order, $page) {
+    //     $start = ($page-1)*15;
+    //     $sql = "SELECT * FROM products WHERE promotionalPrice > ".$minPrice." AND promotionalPrice < ".$maxPrice;
+    //     if ($id)  $sql .= " AND categoriesID = ".$id;
+    //     $sql .= " ORDER BY promotionalPrice ".$order;
+    //     $sql .= " LIMIT $start,15";
+    //     //echo $sql;
+    //     return pdo_query($sql);
     // }
+
+    function collectionProduct($id, $minPrice, $maxPrice, $order, $page) {
+        $start = ($page - 1) * 15;
+        $sql = "SELECT * FROM products WHERE promotionalPrice > ".$minPrice." AND promotionalPrice < ".$maxPrice;
+        if ($id)  $sql .= " AND categoriesID = ".$id;
+        
+        // Thêm điều kiện sắp xếp theo thứ tự từ A đến Z hoặc từ Z đến A
+        if ($order == 'AZ') {
+            $sql .= " ORDER BY productName ASC";
+        } elseif ($order == 'ZA') {
+            $sql .= " ORDER BY productName DESC";
+        } elseif ($order == 'ASC') {
+            $sql .= " ORDER BY promotionalPrice ASC"; // Sắp xếp theo giá tăng dần
+        } elseif ($order == 'DESC') {
+            $sql .= " ORDER BY promotionalPrice DESC"; // Sắp xếp theo giá giảm dần
+        } elseif ($order == 'NEWEST') {
+            $sql .= " ORDER BY creationDate DESC"; // Sắp xếp theo sản phẩm mới nhất
+        } else {
+            // Mặc định sắp xếp theo giá giảm dần
+            $sql .= " ORDER BY promotionalPrice DESC";
+        }
+    
+        $sql .= " LIMIT $start,15";
+        
+        return pdo_query($sql);
+    }
+    
 //================
 //Trang search
 //================
@@ -69,6 +104,10 @@ function productOne($id){
 //Trang admin
 //================
 
+function productList(){
+    $sql = "SELECT * from products  ";
+    return pdo_query($sql);
+}
 // hàm đếm số lượng
 function countProduct(){
     $sql = "SELECT COUNT(*) FROM products";
@@ -95,12 +134,7 @@ function productDelete($id){
 function productEdit($id ,$name, $image, $price, $sale, $category, $description, $hot, $status){
     $sql = "UPDATE products SET productName=?, image=?, price=?, promotionalPrice=?, categoriesID=?, description=?, hot=?, status=? WHERE productsID =?";
     return pdo_query($sql,$name ,$image, $price, $sale, $category, $description, $hot, $status, $id);
-
 }
 
 
-    function a_z(){
-        $sql = "SELECT * FROM products ORDER BY productName ASC";
-        return pdo_query($sql);
-    }
 ?>

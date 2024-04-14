@@ -7,27 +7,27 @@
             <div class="form-group">
                 <input id="username" name="userName" type="text" placeholder="Tên đăng nhập" class="form-control">
                 <label for=""><i class="fa-solid fa-user"></i></label>
-                <span class="form-message"></span>
+                <span class="form-message"><?php echo $userNameError?> </span>
             </div>
             <div class="form-group">
                 <input id="fullname" name="name" type="text" placeholder="Họ & Tên" class="form-control">
                 <label for=""><i class="fa-solid fa-user"></i></label>
-                <span class="form-message"></span>
+                <span class="form-message"> <?php echo $nameError?></span>
             </div>
             <div class="form-group">
                 <input id="email" name="email" type="text" placeholder="Email" class="form-control">
                 <label for=""><i class="fa-solid fa-envelope"></i></label>
-                <span class="form-message"></span>
+                <span class="form-message"><?php echo $emailError?></span>
             </div>
             <div class="form-group">
                 <input id="phoneNumber" name="phone" type="text" placeholder="Số điện thoại" class="form-control">
                 <label for=""><i class="fa-solid fa-phone"></i></label>
-                <span class="form-message"></span>
+                <span class="form-message"><?php echo $phoneError?> </span>
             </div>
             <div class="form-group">
                 <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
-                <label for=""><i class="fa-solid fa-phone"></i></label>
-                <span class="form-message"></span>
+                <label for=""><i class="fa-solid fa-location-dot"></i></label>
+                <span class="form-message"><?php echo $addressError?></span>
             </div>
             <div class="form-group">
                 <input id="password" name="pass" type="password" placeholder="Nhập mật khẩu" class="form-control">
@@ -47,7 +47,7 @@
                 </div>
             <?php endif;
             unset($data); ?>
-            <button class="form-submit" name="register_submit" type="submit">Đăng ký</button>
+            <button class="form-submit" name="register_submit" type="submit" onclick="formValid();">Đăng ký</button>
             <p>hoặc sử dụng tài khoản của bạn</p>
             <div class="form-account">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -61,3 +61,16 @@
             <!-- <?php echo '<div style="color: red;">' . $error . '</div>'; ?> -->
         </form>
 </section>
+
+
+<script>
+    // function formValid(){
+    //     let fullname =document.getElementById("fullname").value;
+    //     if(fullname == ""){
+    //         document.getElementById("errFullname").innerHTML = "Vui lòng nhập họ và tên";
+    //         document.getElementById("fullname").focus();
+    //         return;
+    //     }
+    //     document.getElementById("errFullname").innerHTML = "";
+    // }
+</script>

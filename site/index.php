@@ -18,7 +18,7 @@ if(isset($mod)){
     }
     
 }else{
-    header('location: ?mod=page&act=productDetail');
+    header('location: ?mod=page&act=home');
 }
 
 ?>

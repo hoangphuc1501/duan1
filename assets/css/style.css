@@ -248,7 +248,7 @@ body {
     width: 100%;
 }
 
-#main-menu .submenu {
+#main-menu ul.submenu {
     width: 250px;
     background: #ffffff;
     display: none;
@@ -257,7 +257,7 @@ body {
     z-index: 999;
 }
 
-#main-menu ul li:hover .submenu {
+#main-menu li:hover  ul.submenu {
     display: block;
 }
 
@@ -276,7 +276,15 @@ body {
 #main-menu ul li ul.submenu:hover ul.submenu {
     display: block;
 }
-
+/* #main-menu ul.submenu ul.sub-sub-menu{
+    display: none;
+    top: 0;
+    position: absolute;
+    left: 250px;
+}
+#main-menu ul li ul.submenu:hover ul.sub-sub-menu{
+    display: block;
+} */
 
 /* footer */
 

@@ -11,8 +11,7 @@ if (isset($act)) {
             $product = productOne($id);
             if (isset($_SESSION['cart'][$id])) {
                 $_SESSION['cart'][$id]['quantity'] += 1;
-            }
-                else {
+            } else {
                 $_SESSION['cart'][$id] = array(
                     'productsID' => $product['productsID'],
                     'productName' => $product['productName'],
@@ -21,8 +20,8 @@ if (isset($act)) {
                     'promotionalPrice' => $product['promotionalPrice'],
                     'quantity' => 1,
                 );
-                }
-        
+            }
+
             // print_r ($_SESSION['cart']);
             include_once 'view/template-header.php';
             include_once 'view/page-cart.php';
@@ -49,6 +48,12 @@ if (isset($act)) {
                 unset($_SESSION['cart'][$id]);
             }
             header('location: ?mod=cart&act=list');
+            break;
+        case 'payment':
+            $categoryList = categoryList();
+            include_once 'view/template-header.php';
+            include_once 'view/page-payment.php';
+            include_once 'view/template-footer.php';
             break;
     }
 }

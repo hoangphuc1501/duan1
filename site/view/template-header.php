@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/cart.css">
     <link rel="stylesheet" href="../assets/css/product-detail.css">
+    <link rel="stylesheet" href="../assets/css/news.css">
+    <link rel="stylesheet" href="../assets/css/feedback.css">
     <title>Document</title>
 </head>
 
@@ -65,7 +67,7 @@
                         <ul class="display-flex">
                             <li><a href="?mod=page&act=home">Trang chủ</a></li>
                             <li>
-                                <a href="#">Giới thiệu <i class="fa-solid fa-chevron-down"></i></a>
+                                <a href="?mod=page&act=about">Giới thiệu <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="submenu">
                                     <li><a href="#">Về chúng tôi</a></li>
                                     <li><a href="#">Đội ngũ chuyên gia</a></li>
@@ -81,13 +83,13 @@
                                     foreach ($categoryList as $item) {
                                         if ($item['parentID'] == 0) { ?>
                                             <li>
-                                                <a href="#">
+                                                <a href="?mod=page&act=product&id=<?= $scl['categoriesID'] ?>">
                                                     <?= $item['categoryName'] ?>
                                                 </a>
                                                 <ul class="submenu">
                                                     <?php foreach ($subcategoryList as $scl) {
                                                         if ($scl['parentID'] != 0 && $scl['parentID'] == $item['categoriesID']) { ?>
-                                                            <li><a href="#">
+                                                            <li><a href="?mod=page&act=product&id=<?= $scl['categoriesID'] ?>">
                                                                     <?= $scl['categoryName'] ?>
                                                                 </a></li>
                                                         <?php }
@@ -102,12 +104,46 @@
                             <li>
                                 <a href="#">Thương hiệu <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="#">Gậy Golf</a></li>
+                                    <li>
+                                        <a href="#">Gậy Golf</a>
+                                        <ul class="submenu">
+                                                    
+                                                            <li><a href="#">
+                                                                    adidas
+                                                                </a></li>
+                                                                <li><a href="#">
+                                                                    adidas
+                                                                </a></li><li><a href="#">
+                                                                    adidas
+                                                                </a></li><li><a href="#">
+                                                                    adidas
+                                                                </a></li><li><a href="#">
+                                                                    adidas
+                                                                </a></li> 
+                                                </ul>
+                                    </li>
                                     <li><a href="#">Túi Golf</a></li>
                                     <li><a href="#">Gày Golf</a></li>
                                     <li><a href="#">Mũ Golf</a></li>
                                     <li><a href="#">Quần Áo Golf</a></li>
-                                    <li><a href="#">Găng Tay Golf</a></li>
+                                    <li>
+                                        <a href="#">Găng Tay Golf</a>
+                                        <ul class="submenu">
+                                                    
+                                                            <li><a href="#">
+                                                                    nike
+                                                                </a></li>
+                                                                <li><a href="#">
+                                                                    nike
+                                                                </a></li><li><a href="#">
+                                                                    adidas
+                                                                </a></li><li><a href="#">
+                                                                    adidas
+                                                                </a></li><li><a href="#">
+                                                                    adidas
+                                                                </a></li> 
+                                                </ul>
+                                </li>
                                     <li><a href="#">Bóng Golf</a></li>
                                     <li><a href="#">Kính Golf</a></li>
                                     <li><a href="#">Tee Golf</a></li>
@@ -139,7 +175,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Tin tức <i class="fa-solid fa-chevron-down"></i></a>
+                                <a href="?mod=page&act=news">Tin tức <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="submenu">
                                     <li><a href="#">Tin hoạt động</a></li>
                                     <li><a href="#">Tin ngành golf</a></li>

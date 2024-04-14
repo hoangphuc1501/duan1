@@ -15,7 +15,7 @@
                 <p>Văn phòng: 641 Tân Sơn, P.12, Q.Gò Vấp, Tp.Hồ Chí Minh</p>
                 <p>Điện thoại: 0333568796 - 0334682202</p>
                 <p>Email: golfshops@gmail.com</p>
-                <p>Website: golfshops@gamil.com</p>
+                <p>Website: golfshops@gamil.com</p>
                 <p>Fanpage: facebook.com/golfshops.shop</p>
             </div>
         </div>
@@ -24,27 +24,27 @@
             <form action="" method="post">
                 <div class="form-group">
                     <input id="fullname" name="fullname" type="text" placeholder="Họ & Tên" class="form-control">
-                    <label for=""><i class="fa-solid fa-envelope"></i></label>
+                    <label for=""><i class="fa-solid fa-user"></i></label>
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
                     <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                    <label for=""><i class="fa-solid fa-lock"></i></label>
+                    <label for=""><i class="fa-solid fa-envelope"></i></i></label>
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
                     <input id="phone" name="phone" type="text" placeholder="Số điện thoại" class="form-control">
-                    <label for=""><i class="fa-solid fa-lock"></i></label>
+                    <label for=""><i class="fa-solid fa-phone"></i></label>
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
                     <textarea name="content" id="" cols="30" rows="10" placeholder="Nội dung"></textarea>
-                    <label for=""><i class="fa-solid fa-lock"></i></label>
+                    <label for=""></label>
                     <span class="form-message"></span>
                 </div>
                 <button class="form-submit" type="submit" name="contact_submit">Gửi thông tin</button>
             </form>
-            <p><?php echo $mail = "Đã gửi thành công"; ?></p>
+            <!-- <p><?php echo $mail = "Đã gửi thành công"; ?></p> -->
         </div>
     </div>
     <div class="container-bot">

@@ -9,9 +9,9 @@
                 </div>
                 <div>
                 <label class="form-label" for="">Danh Mục</label>
-                <select class="form-select" name="category" >
-                    <?php foreach($categoryList as $cl) :?>
-                        <option value="<?=$cl['categoriesID'] ?>"><?=$cl['categoryName'] ?></option>
+                <select class="form-select" name="product" >
+                    <?php foreach($productList as $cl) :?>
+                        <option value="<?=$cl['productsID'] ?>"><?=$cl['productName'] ?></option>
                     <?php endforeach; ?>
                 </select>
                 
@@ -38,8 +38,8 @@
                 
                 <div>
                     <label class="form-label" for="">Sản phẩm nổi bật</label class="form-label">
-                    <div class="form-control">
-                        <input type="radio" name="hot" value="1"> Có
+                    <div class="form-control ">
+                        <input type="radio" name="hot" value="1"checked> Có
                         <input type="radio" name="hot" value="0"> Không
                     </div>
                 <div>

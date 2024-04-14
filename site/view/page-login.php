@@ -6,12 +6,12 @@
             <div class="form-group">
                 <input id="email" name="email" type="text" placeholder="Email" class="form-control">
                 <label for=""><i class="fa-solid fa-envelope"></i></label>
-                <span class="form-message"></span>
+                <span class="form-message"><?php echo $emailError?></span>
             </div>
             <div class="form-group">
                 <input id="password" name="pass" type="password" placeholder="Nhập mật khẩu" class="form-control">
                 <label for=""><i class="fa-solid fa-lock"></i></label>
-                <span class="form-message"></span>
+                <span class="form-message"><?php echo $passwordError?></span>
             </div>
             <div class="form-remember">
                 <label for=""><input type="checkbox" name="" id="">Nhớ mật khẩu</label>

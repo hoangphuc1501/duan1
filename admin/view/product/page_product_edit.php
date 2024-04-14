@@ -40,7 +40,7 @@
                 <div>
                     <label class="form-label" for="">Hình ảnh</label class="form-label">
                     <input class="form-control" type="file" name="image">
-                    <img class="my-3" src="../assets/img/<?=$ps['image']?>" width="200" height="250" alt="">
+                    <img class="my-3" src="../admin/HinhAnh/<?=$ps['image']?>" width="200" height="250" alt="">
 
                 </div>
                 <!-- <div>
@@ -57,8 +57,8 @@
                 <div>
                     <label class="form-label" for="">Trạng thái</label class="form-label">
                     <select class="form-select" name="status" id="">
-                        <option value="1" <?php if($ps['status'] == '1') echo 'selected' ?>>Đang hoạt động</option>
-                        <option value="0" <?php if($ps['status']== '0') echo 'selected' ?>>Tạm ngưng</option>
+                        <option value="1" <?php if($ps['status'] == 'Đang hoạt động') echo 'selected' ?>>Đang hoạt động</option>
+                        <option value="0" <?php if($ps['status']== 'Tạm ngưng') echo 'selected' ?>>Tạm ngưng</option>
                     </select>
             </div>
         </div>

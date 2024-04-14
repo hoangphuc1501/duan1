@@ -60,10 +60,10 @@
                 <!-- product -->
                 <?php foreach($newProduct as $np):?>
                 <div class="item-product">
-                    <a href="#"><img
+                    <a href="?mod=page&act=productDetail&id=<?=$np['productsID']?>"><img
                             src="<?= $np['image']?>"
                             alt=""></a>
-                    <h3 class="product-title"><a href="#"><?= $np['productName']?></a></h3>
+                    <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$np['productsID']?>"><?= $np['productName']?></a></h3>
                     <span class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -71,12 +71,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </span>
-                    <span class="promotion-price"><?= $np['promotionalPrice']?><sup>đ</sup></span>
-                    <span class="price"><del><?= $np['price']?><sup>đ</sup></del></span>
+                    <span class="promotion-price"><?= number_format($np['promotionalPrice'],0,'.','.')?><sup>đ</sup></span>
+                    <span class="price"><del><?= number_format($np['price'],0,'.','.')?><sup>đ</sup></del></span>
                     <span class="label-promotion"><?= $np['labelPromotion']?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$np['productsID']?>"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$np['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
@@ -98,10 +98,10 @@
                 <!-- product -->
                 <?php foreach($stickGolfSpecial as $sgs): ?>
                 <div class="item-product">
-                    <a href="#"><img
+                    <a href="?mod=page&act=productDetail&id=<?=$sgs['productsID']?>"><img
                             src="<?= $sgs['image']?>"
                             alt=""></a>
-                    <h3 class="product-title"><a href="#"><?= $sgs['productName']?></a></h3>
+                    <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$sgs['productsID']?>"><?= $sgs['productName']?></a></h3>
                     <span class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -109,12 +109,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </span>
-                    <span class="promotion-price"><?= $sgs['promotionalPrice']?><sup>đ</sup></span>
-                    <span class="price"><del><?= $sgs['price']?><sup>đ</sup></del></span>
+                    <span class="promotion-price"><?= number_format($sgs['promotionalPrice'],0,'.','.')?><sup>đ</sup></span>
+                    <span class="price"><del><?= number_format($sgs['price'],0,'.','.')?><sup>đ</sup></del></span>
                     <span class="label-promotion"><?= $sgs['labelPromotion']?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$sgs['productsID']?>"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$sgs['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
@@ -141,8 +141,8 @@
                 <!-- product -->
                 <?php foreach ($productOutstanding as $po): ?>
                     <div class="item-product">
-                        <a href="#"><img src="<?= $po['image'] ?>" alt=""></a>
-                        <h3 class="product-title"><a href="#">
+                        <a href="?mod=page&act=productDetail&id=<?=$po['productsID']?>"><img src="<?= $po['image'] ?>" alt=""></a>
+                        <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$po['productsID']?>">
                                 <?= $po['productName'] ?>
                             </a></h3>
                         <span class="star">
@@ -153,17 +153,17 @@
                             <i class="fa-solid fa-star"></i>
                         </span>
                         <span class="promotion-price">
-                            <?= $po['promotionalPrice'] ?><sup>đ</sup>
+                            <?= number_format($po['promotionalPrice'],0,'.','.') ?><sup>đ</sup>
                         </span>
                         <span class="price"><del>
-                                <?= $po['price'] ?><sup>đ</sup>
+                                <?= number_format($po['price'],0,'.','.') ?><sup>đ</sup>
                             </del></span>
                         <span class="label-promotion">
                             <?= $po['labelPromotion'] ?>
                         </span>
 
                         <div class="action-product display-flex">
-                            <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
+                            <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$po['productsID']?>"><i class="fa-solid fa-eye"></i></a></button>
                             <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$po['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
@@ -185,10 +185,10 @@
                 <!-- product -->
                 <?php foreach ($fashionGolf as $fg) : ?>
                     <div class="item-product">
-                        <a href="#"><img
+                        <a href="?mod=page&act=productDetail&id=<?=$fg['productsID']?>"><img
                                 src="<?= $fg['image'] ?>"
                                 alt=""></a>
-                        <h3 class="product-title"><a href="#"><?= $fg['productName'] ?></a></h3>
+                        <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$fg['productsID']?>"><?= $fg['productName'] ?></a></h3>
                         <span class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -196,12 +196,12 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <span class="promotion-price"><?= $fg['promotionalPrice'] ?><sup>đ</sup></span>
-                        <span class="price"><del>3<?= $fg['price'] ?><sup>đ</sup></del></span>
+                        <span class="promotion-price"><?= number_format($fg['promotionalPrice'],0,'.','.') ?><sup>đ</sup></span>
+                        <span class="price"><del>3<?= number_format($fg['price'],0,'.','.') ?><sup>đ</sup></del></span>
                         <span class="label-promotion"><?= $fg['labelPromotion'] ?></span>
 
                         <div class="action-product display-flex">
-                            <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
+                            <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$fg['productsID']?>"><i class="fa-solid fa-eye"></i></a></button>
                             <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$fg['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
@@ -234,10 +234,10 @@
                 <!-- product -->
                 <?php foreach($bagGolf as $bg) :?>
                 <div class="item-product">
-                    <a href="#"><img
+                    <a href="?mod=page&act=productDetail&id=<?=$bg['productsID']?>"><img
                             src="<?=$bg['image']?>"
                             alt=""></a>
-                    <h3 class="product-title"><a href="#"><?=$bg['productName']?></a></h3>
+                    <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$bg['productsID']?>"><?=$bg['productName']?></a></h3>
                     <span class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -245,12 +245,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </span>
-                    <span class="promotion-price"><?=$bg['promotionalPrice']?><sup>đ</sup></span>
-                    <span class="price"><del><?=$bg['price']?><sup>đ</sup></del></span>
+                    <span class="promotion-price"><?=number_format($bg['promotionalPrice'],0,'.','.')?><sup>đ</sup></span>
+                    <span class="price"><del><?=number_format($bg['price'],0,'.','.')?><sup>đ</sup></del></span>
                     <span class="label-promotion"><?=$bg['labelPromotion']?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$bg['productsID']?>"><i class="fa-solid fa-eye"></i></a></button>
                         <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$bg['productsID'] ?>"><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
@@ -272,10 +272,10 @@
                 <!-- product -->
                 <?php foreach($shoeGolf as $sg) :?>
                 <div class="item-product">
-                    <a href="#"><img
+                    <a href="?mod=page&act=productDetail&id=<?=$sg['productsID']?>"><img
                             src="<?= $sg['image'] ?>"
                             alt=""></a>
-                    <h3 class="product-title"><a href="#"><?= $sg['productName'] ?></a></h3>
+                    <h3 class="product-title"><a href="?mod=page&act=productDetail&id=<?=$sg['productsID']?>"><?= $sg['productName'] ?></a></h3>
                     <span class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -283,13 +283,13 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </span>
-                    <span class="promotion-price"><?= $sg['promotionalPrice'] ?><sup>đ</sup></span>
-                    <span class="price"><del><?= $sg['price'] ?><sup>đ</sup></del></span>
+                    <span class="promotion-price"><?= number_format($sg['promotionalPrice'],0,'.','.') ?><sup>đ</sup></span>
+                    <span class="price"><del><?= number_format($sg['price'],0,'.','.') ?><sup>đ</sup></del></span>
                     <span class="label-promotion"><?= $sg['labelPromotion'] ?></span>
 
                     <div class="action-product display-flex">
-                        <button class="view-product"><a href="?mod=page&act=productDetail&id"><i class="fa-solid fa-eye"></i></a></button>
-                        <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$np['productsID'] ?>  "><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class="view-product"><a href="?mod=page&act=productDetail&id=<?=$sg['productsID']?>"><i class="fa-solid fa-eye"></i></a></button>
+                        <button class="add-cart"><a href="?mod=cart&act=add&id=<?=$sg['productsID'] ?>  "><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
                 </div>
                 <?php endforeach;?>
