@@ -29,32 +29,7 @@ if (isset($act)) {
             break;
         case 'register':
             $categoryList = categoryList();
-            $data = $userNameError="";
-            $emailError = "";
-            $passwordError = "";
-            $nameError = "";
-            $phoneError="";
-            $addressError="";
-            
             if (isset($register_submit)) {
-                if(empty($userName)){
-                    $userNameError = "Vui lòng nhập tên tài khoản";
-                }
-                if(empty($name)){
-                    $nameError = "Vui lòng nhập họ và tên";
-                }
-                if(empty($email)){
-                    $emailError = "Vui lòng nhập email";
-                }
-                if(empty($phone)){
-                    $phoneError = "Vui lòng nhập số điện thoại";
-                }
-                if(empty($address)){
-                    $addressError = "Vui lòng nhập địa chỉ";
-                }
-                if(empty($password)){
-                    $passwordError = "Vui lòng nhập mật khẩu";
-                }
                 if ($pass != $repass) {
                     $data = "Nhập mật khẩu không khớp";
                 } else {
@@ -91,11 +66,9 @@ if (isset($act)) {
                 $forgotPass = forgotPass($email);
                 if ($forgotPass) {
                     $newPassword = substr(md5(rand(0, 999999)), 0, 8);
-                    // print_r($email . " " . $newPassword);
                     $updatedPass = updatedPass($email, $newPassword);       
                     if ($updatedPass) {
-                        $Notification = "Mật khẩu đã được cập nhật thành công.";
-                        // chờ hàm php mail
+                        $Notification = "Mật khẩu đã được gửi thành công.";
                         forgotPassMail( $email, $newPassword);
                     } else {
                         $Notification = "Có lỗi xảy ra khi cập nhật mật khẩu.";

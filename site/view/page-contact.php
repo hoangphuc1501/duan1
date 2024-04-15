@@ -45,6 +45,7 @@
                 <button class="form-submit" type="submit" name="contact_submit">Gửi thông tin</button>
             </form>
             <!-- <p><?php echo $mail = "Đã gửi thành công"; ?></p> -->
+            
         </div>
     </div>
     <div class="container-bot">

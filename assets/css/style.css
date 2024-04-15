@@ -396,7 +396,7 @@ body {
 }
 
 .banner .buttons button:hover {
-    background-color: #CD853F;
+    background-color: #296E38;
     border: 2px dotted black;
     color: #000;
 }
@@ -417,7 +417,7 @@ body {
     list-style: none;
     width: 15px;
     height: 10px;
-    background-color: #3A5FCD;
+    background-color: #296E38;
     margin: 10px;
     border-radius: 20px;
     transition: 0.5s;
@@ -582,7 +582,7 @@ body {
     width: 40px;
     height: 100%;
     cursor: pointer;
-    background: #fd7e14;
+    background: #2b9945;
     color: #ffffff;
     border-radius: 6px;
     border: none;
@@ -596,7 +596,7 @@ body {
 }
 
 .item-product .action-product button:hover {
-    background: #2b9945;
+    background: #F04C28;
 }
 
 .item-product:hover .action-product {
@@ -623,7 +623,7 @@ body {
 
 .see-more a:hover,
 .view-all a:hover {
-    background: #fd7e14;
+    background: #F04C28;
 }
 
 

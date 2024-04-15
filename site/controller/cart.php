@@ -21,8 +21,6 @@ if (isset($act)) {
                     'quantity' => 1,
                 );
             }
-
-            // print_r ($_SESSION['cart']);
             include_once 'view/template-header.php';
             include_once 'view/page-cart.php';
             include_once 'view/template-footer.php';

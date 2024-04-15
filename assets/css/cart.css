@@ -28,20 +28,14 @@
 .add-cart-title thead tr th {
     padding: 10px;
     color: #000000;
-    /* background: #F04C28; */
 }
 
 .add-cart-title tbody tr td {
     padding: 10px;
     color: #000000;
-    /* background: #F04C28; */
     text-align: center;
 }
 
-
-/* .amount-product-buy {
-    border: 1px solid black;
-} */
 
 .amount-product-buy a {
     border: 1px solid black;
@@ -116,18 +110,23 @@
 
 .act-payment button {
     padding: 15px;
-    background: #DEDEDE;
+    background: #F04C28;
     border: none;
     border-radius: 10px;
     width: 90%;
     cursor: pointer;
 }
 .act-payment button a{
-    font-size: 18px;
-    color: #000000;
+    font-size: 20px;
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 111px;
+    padding: 10px 90px;
+    text-transform: uppercase;
 }
+.act-payment button:hover{
+    background: rgb(240, 76, 40, 0.8);
+}
+
 .return-update-cart {
     width: 100%;
     height: 50px;
@@ -139,15 +138,19 @@
     width: 30%;
     height: 40px;
     line-height: 40px;
-    background: #DEDEDE;
+    background: #296E38;
     border-radius: 10px;
     cursor: pointer;
+}
+.cart-update:hover,
+.cart-return:hover{
+    background: rgb(41, 110, 56,0.8);
 }
 
 .cart-update a,
 .cart-return a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .cart-return a i {

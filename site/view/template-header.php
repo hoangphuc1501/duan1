@@ -38,17 +38,16 @@
                     </form>
                 </div>
                 <div class="header-login display-flex">
-                <?php if (isset($_SESSION['user'])): ?>
-                    <a href="?mod=user&act=info"><i class="fa-solid fa-user"></i></a>
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <a href="?mod=user&act=info"><i class="fa-solid fa-user"></i></a>
                     <?php else: ?>
                         <a href="?mod=user&act=login">Đăng nhập</a>
-                    <?php endif;?>
+                    <?php endif; ?>
                 </div>
                 <div class="header-cart display-flex">
                     <a href="?mod=cart&act=list"><i class="fa-solid fa-cart-shopping"></i></a>
                     <div class="">
-                        <span id="amount-cart"
-                            class="count-cart">
+                        <span id="amount-cart" class="count-cart">
                             <?php if (isset($_SESSION['cart'])): ?>
                                 <?= count($_SESSION['cart']) ?>
                             <?php else: ?>
@@ -105,52 +104,22 @@
                                 <a href="#">Thương hiệu <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="#">Gậy Golf</a>
-                                        <ul class="submenu">
-                                                    
-                                                            <li><a href="#">
-                                                                    adidas
-                                                                </a></li>
-                                                                <li><a href="#">
-                                                                    adidas
-                                                                </a></li><li><a href="#">
-                                                                    adidas
-                                                                </a></li><li><a href="#">
-                                                                    adidas
-                                                                </a></li><li><a href="#">
-                                                                    adidas
-                                                                </a></li> 
-                                                </ul>
+                                        <a href="#">Titlest</a>
                                     </li>
-                                    <li><a href="#">Túi Golf</a></li>
-                                    <li><a href="#">Gày Golf</a></li>
-                                    <li><a href="#">Mũ Golf</a></li>
-                                    <li><a href="#">Quần Áo Golf</a></li>
+                                    <li><a href="#">FootJoy</a></li>
+                                    <li><a href="#">TaylorMade</a></li>
+                                    <li><a href="#">Nike</a></li>
+                                    <li><a href="#">Adidas</a></li>
                                     <li>
-                                        <a href="#">Găng Tay Golf</a>
-                                        <ul class="submenu">
-                                                    
-                                                            <li><a href="#">
-                                                                    nike
-                                                                </a></li>
-                                                                <li><a href="#">
-                                                                    nike
-                                                                </a></li><li><a href="#">
-                                                                    adidas
-                                                                </a></li><li><a href="#">
-                                                                    adidas
-                                                                </a></li><li><a href="#">
-                                                                    adidas
-                                                                </a></li> 
-                                                </ul>
-                                </li>
-                                    <li><a href="#">Bóng Golf</a></li>
-                                    <li><a href="#">Kính Golf</a></li>
-                                    <li><a href="#">Tee Golf</a></li>
-                                    <li><a href="#">Dù Golf</a></li>
-                                    <li><a href="#">Máy Đo Khoảng Cách Golf</a></li>
-                                    <li><a href="#">Dụng cụ luyện tập Golf</a></li>
-                                    <li><a href="#">Phụ kiện Golf</a></li>
+                                        <a href="#">ECCO</a>
+                                    </li>
+                                    <li><a href="#">HONMA</a></li>
+                                    <li><a href="#">PING</a></li>
+                                    <li><a href="#">XXIO</a></li>
+                                    <li><a href="#">Callaway</a></li>
+                                    <li><a href="#">Mizuno</a></li>
+                                    <li><a href="#">Puma</a></li>
+                                    <li><a href="#">Srixon</a></li>
                                 </ul>
                             </li>
                             <li>

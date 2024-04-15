@@ -81,24 +81,24 @@
                 <ul>
                     <li>
                         Thu cũ Đổi mới: Giảm đến 2 triệu
-                        (Tùy model máy cũ, không kèm các hình thức thanh toán online, mua kèm) <a href="">Xem chi
+                        (Tùy gậy cũ, không kèm các hình thức thanh toán online, mua kèm) <a href="#">Xem chi
                             tiết</a>
                     </li>
                     <li>
-                        Hoàn tiền nếu ở đâu rẻ hơn (Trong vòng 7 ngày; chỉ áp dụng tại siêu thị) <a href="">Xem chi
+                        Hoàn tiền nếu ở đâu rẻ hơn (Trong vòng 7 ngày; chỉ áp dụng tại cửa hàng) <a href="#">Xem chi
                             tiết</a>
                     </li>
                     <li>
-                        Nhập mã MMTGDD giảm tối đa 100.000đ khi thanh toán qua MOMO <a href="">(Xem chi tiết tại
+                        Nhập mã GOLFSHOP giảm tối đa 100.000đ khi thanh toán qua MOMO <a href="#">(Xem chi tiết tại
                             đây)</a>
                     </li>
                     <li>
-                        Nhập mã VNPAY789 giảm tối đa 150K cho đơn hàng từ 05 Triệu thanh toán qua VNPAY <a href="">(Xem
+                        Nhập mã VNPAY789 giảm tối đa 150K cho đơn hàng từ 05 Triệu thanh toán qua VNPAY <a href="#">(Xem
                             chi tiết tại đây)</a>
                     </li>
                     <li>
                         Giảm 100,000đ Cho Đơn Hàng Từ 10 Triệu Khi Thanh Toán Quét Mã SmartPay QR Bằng Ứng Dụng Ngân
-                        Hàng <a href="">(Xem chi tiết tại đây)</a>
+                        Hàng <a href="#">(Xem chi tiết tại đây)</a>
                     </li>
                 </ul>
             </div>
